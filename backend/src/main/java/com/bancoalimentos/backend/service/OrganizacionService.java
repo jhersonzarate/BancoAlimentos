@@ -19,9 +19,9 @@ public class OrganizacionService {
     private final OrganizacionRepository organizacionRepository;
 
     public List<OrganizacionDTO.Response> listarActivas() {
-        return organizacionRepository.findByActivoTrueOrderByNombreAsc()
-                .stream().map(this::toResponse).collect(Collectors.toList());
-    }
+    return organizacionRepository.findByActivoTrueOrderByIdAsc()
+            .stream().map(this::toResponse).collect(Collectors.toList());
+}
 
     public List<OrganizacionDTO.Response> listarTodas() {
         return organizacionRepository.findAllByOrderByIdAsc()

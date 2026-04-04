@@ -9,8 +9,9 @@ import java.util.List;
 @Repository
 public interface OrganizacionRepository extends JpaRepository<Organizacion, Long> {
 
-    List<Organizacion> findByActivoTrueOrderByNombreAsc();
+    List<Organizacion> findByActivoTrueOrderByIdAsc();
+
+    List<Organizacion> findAllByOrderByIdAsc();
 
     boolean existsByRuc(String ruc);
-    List<Organizacion> findAllByOrderByIdAsc();
 }
