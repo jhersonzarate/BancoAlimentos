@@ -15,7 +15,7 @@
 
   <!-- Filtro por estado -->
   <div class="filtros card mb-md">
-    <span class="filtros__etiqueta">Filtrar por estado:</span>
+    <span class="filtros__etiqueta">Estado:</span>
     <div class="filtros__opciones">
       <button class="filtros__btn" [class.filtros__btn--activo]="estadoFiltro === ''"
               (click)="filtrar('')">Todos</button>
@@ -37,8 +37,8 @@
           <th>Donante</th>
           <th>Alimento</th>
           <th>Cantidad</th>
-          <th>Fecha donación</th>
-          <th>Vencimiento</th>
+          <th class="col-vencimiento">Fecha</th>
+          <th class="col-vencimiento">Vencimiento</th>
           <th>Estado</th>
           <th>Acciones</th>
         </tr>
@@ -49,8 +49,8 @@
           <td class="negrita">{{ d.donante }}</td>
           <td>{{ d.tipoAlimento }}</td>
           <td>{{ d.cantidad }} {{ d.unidad }}</td>
-          <td>{{ d.fechaDonacion | date:'dd/MM/yyyy' }}</td>
-          <td>{{ d.fechaVencimiento ? (d.fechaVencimiento | date:'dd/MM/yyyy') : '—' }}</td>
+          <td class="col-vencimiento">{{ d.fechaDonacion | date:'dd/MM/yy' }}</td>
+          <td class="col-vencimiento">{{ d.fechaVencimiento ? (d.fechaVencimiento | date:'dd/MM/yy') : '—' }}</td>
           <td>
             <span class="badge" [ngClass]="badgeClase(d.estado!)">
               {{ etiquetaEstado(d.estado!) }}

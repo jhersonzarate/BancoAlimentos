@@ -1,4 +1,10 @@
 .acciones {
   display: flex;
   gap: 6px;
+}
+
+@media (max-width: 600px) {
+  .tabla .col-fecha {
+    display: none;
+  }
 }/*# sourceMappingURL=lista-distribuciones.component.css.map */

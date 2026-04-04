@@ -18,6 +18,8 @@ html, body {
 
 a { text-decoration: none; color: inherit; }
 
+// ─── Layout principal ───────────────────────────────────────────────────────
+
 .app-layout {
   display: flex;
   height: 100vh;
@@ -30,6 +32,11 @@ a { text-decoration: none; color: inherit; }
   flex-direction: column;
   overflow: hidden;
   margin-left: $sidebar-ancho;
+  transition: margin-left 0.3s ease;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .page-body {
@@ -37,7 +44,44 @@ a { text-decoration: none; color: inherit; }
   overflow-y: auto;
   padding: $espaciado-xl;
   padding-top: calc($topbar-alto + $espaciado-lg);
+
+  @media (max-width: 768px) {
+    padding: $espaciado-md;
+    padding-top: calc($topbar-alto + $espaciado-md);
+  }
+
+  @media (max-width: 480px) {
+    padding: $espaciado-sm;
+    padding-top: calc($topbar-alto + $espaciado-sm);
+  }
 }
+
+// ─── Overlay para sidebar móvil ─────────────────────────────────────────────
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  &.activo {
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+    pointer-events: none;
+
+    &.activo {
+      pointer-events: auto;
+    }
+  }
+}
+
+// ─── Card ────────────────────────────────────────────────────────────────────
 
 .card {
   background: $blanco;
@@ -45,14 +89,27 @@ a { text-decoration: none; color: inherit; }
   box-shadow: $sombra-tarjeta;
   padding: $espaciado-lg;
   transition: box-shadow 0.2s ease;
+
   &:hover { box-shadow: $sombra-hover; }
+
+  @media (max-width: 480px) {
+    padding: $espaciado-md;
+    border-radius: $radio-sm;
+  }
 }
+
+// ─── Tabla ───────────────────────────────────────────────────────────────────
 
 .tabla-contenedor {
   overflow-x: auto;
   border-radius: $radio-md;
   background: $blanco;
   box-shadow: $sombra-tarjeta;
+  -webkit-overflow-scrolling: touch;
+
+  @media (max-width: 480px) {
+    border-radius: $radio-sm;
+  }
 }
 
 table.tabla {
@@ -70,6 +127,12 @@ table.tabla {
       text-transform: uppercase;
       letter-spacing: 0.04em;
       border-bottom: 2px solid $verde-borde;
+      white-space: nowrap;
+
+      @media (max-width: 600px) {
+        padding: $espaciado-sm;
+        font-size: 11px;
+      }
     }
   }
 
@@ -85,9 +148,16 @@ table.tabla {
       font-size: 14px;
       color: $gris-texto;
       vertical-align: middle;
+
+      @media (max-width: 600px) {
+        padding: 6px $espaciado-sm;
+        font-size: 13px;
+      }
     }
   }
 }
+
+// ─── Badge ───────────────────────────────────────────────────────────────────
 
 .badge {
   display: inline-block;
@@ -96,6 +166,7 @@ table.tabla {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.03em;
+  white-space: nowrap;
 
   &--pendiente   { background: #FFF3E0; color: $color-pendiente; }
   &--en-proceso  { background: #E3F2FD; color: $color-en-proceso; }
@@ -103,6 +174,8 @@ table.tabla {
   &--cancelado   { background: #FFEBEE; color: $color-cancelado; }
   &--entregado   { background: $verde-suave; color: $color-entregado; }
 }
+
+// ─── Botones ─────────────────────────────────────────────────────────────────
 
 .btn {
   display: inline-flex;
@@ -116,8 +189,16 @@ table.tabla {
   cursor: pointer;
   transition: background 0.15s, transform 0.1s;
   line-height: 1.4;
+  white-space: nowrap;
+  touch-action: manipulation;
 
   &:active { transform: scale(0.97); }
+
+  // Tamaño mínimo para toque cómodo en móvil
+  @media (max-width: 768px) {
+    min-height: 40px;
+    padding: 8px 14px;
+  }
 
   &--primario {
     background: $verde-base;
@@ -151,9 +232,19 @@ table.tabla {
     color: $gris-secundario;
     border: 1px solid $gris-borde;
     border-radius: $radio-sm;
+    min-height: 36px;
+    min-width: 36px;
+    justify-content: center;
     &:hover { background: $gris-fondo; color: $gris-texto; }
+
+    @media (max-width: 768px) {
+      min-height: 40px;
+      min-width: 40px;
+    }
   }
 }
+
+// ─── Formularios ─────────────────────────────────────────────────────────────
 
 .form-grupo {
   margin-bottom: $espaciado-md;
@@ -177,6 +268,14 @@ table.tabla {
     background: $blanco;
     outline: none;
     transition: border-color 0.15s, box-shadow 0.15s;
+    -webkit-appearance: none;
+    appearance: none;
+
+    // Tamaño mínimo en móvil para evitar zoom en iOS
+    @media (max-width: 768px) {
+      font-size: 16px;
+      min-height: 44px;
+    }
 
     &:focus {
       border-color: $verde-claro;
@@ -189,7 +288,22 @@ table.tabla {
     }
   }
 
-  textarea { resize: vertical; min-height: 80px; }
+  // Flecha personalizada para select
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B6B6B' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+
+    @media (max-width: 768px) {
+      min-height: 44px;
+    }
+  }
 
   .error-msg {
     margin-top: 4px;
@@ -203,27 +317,48 @@ table.tabla {
   grid-template-columns: 1fr 1fr;
   gap: $espaciado-md;
 
-  @media (max-width: 600px) { grid-template-columns: 1fr; }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
+
+// ─── Page header ─────────────────────────────────────────────────────────────
 
 .page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: $espaciado-lg;
+  flex-wrap: wrap;
+  gap: $espaciado-sm;
 
   h1 {
     font-size: 22px;
     font-weight: 700;
     color: $gris-texto;
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   }
 
   p {
     font-size: 14px;
     color: $gris-secundario;
     margin-top: 2px;
+
+    @media (max-width: 480px) {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: $espaciado-md;
   }
 }
+
+// ─── Estado vacío ────────────────────────────────────────────────────────────
 
 .estado-vacio {
   text-align: center;
@@ -233,6 +368,8 @@ table.tabla {
   .icono { font-size: 40px; margin-bottom: $espaciado-sm; }
   p { font-size: 14px; }
 }
+
+// ─── Utilidades ──────────────────────────────────────────────────────────────
 
 .texto-verde   { color: $verde-base; }
 .texto-naranja { color: $naranja-base; }

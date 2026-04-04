@@ -2,3 +2,9 @@
 @use '../../../../styles/variables' as *;
 
 .acciones { display: flex; gap: 6px; }
+
+@media (max-width: 600px) {
+  .tabla .col-fecha {
+    display: none;
+  }
+}

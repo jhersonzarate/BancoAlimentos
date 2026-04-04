@@ -3,6 +3,12 @@
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+@media (max-width: 480px) {
+  .filtros {
+    gap: 8px;
+  }
 }
 .filtros__etiqueta {
   font-size: 13px;
@@ -16,7 +22,7 @@
   flex-wrap: wrap;
 }
 .filtros__btn {
-  padding: 5px 14px;
+  padding: 6px 14px;
   border: 1px solid #E0E0E0;
   border-radius: 20px;
   background: #FFFFFF;
@@ -24,6 +30,14 @@
   cursor: pointer;
   color: #6B6B6B;
   transition: all 0.15s;
+  touch-action: manipulation;
+  min-height: 34px;
+}
+@media (max-width: 480px) {
+  .filtros__btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
 }
 .filtros__btn:hover {
   border-color: #477E63;
@@ -38,4 +52,11 @@
 .acciones {
   display: flex;
   gap: 6px;
+}
+
+@media (max-width: 600px) {
+  .tabla .col-vencimiento,
+  .tabla .col-observaciones {
+    display: none;
+  }
 }/*# sourceMappingURL=lista-donaciones.component.css.map */

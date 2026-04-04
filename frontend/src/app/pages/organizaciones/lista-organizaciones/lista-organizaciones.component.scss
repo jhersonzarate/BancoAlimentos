@@ -8,9 +8,20 @@
   border-radius: 20px;
   font-size: 12px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .acciones {
   display: flex;
   gap: 6px;
+}
+
+@media (max-width: 600px) {
+  .tabla {
+    .col-ruc,
+    .col-telefono,
+    .col-responsable {
+      display: none;
+    }
+  }
 }

@@ -12,20 +12,69 @@
   padding: 0 32px;
   z-index: 90;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: left 0.3s ease;
+}
+@media (max-width: 768px) {
+  .topbar {
+    left: 0;
+    padding: 0 16px;
+  }
+}
+@media (max-width: 480px) {
+  .topbar {
+    padding: 0 8px;
+  }
 }
 .topbar__izquierda {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.topbar__menu-icono {
+.topbar__menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  color: #6B6B6B;
+  transition: background 0.15s;
+  line-height: 1;
+  touch-action: manipulation;
+}
+.topbar__menu-btn:hover {
+  background: #F6F6F6;
+  color: #2B2C2E;
+}
+.topbar__menu-btn .material-icons {
+  font-size: 24px;
+  display: block;
+}
+@media (max-width: 768px) {
+  .topbar__menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.topbar__menu-icono-desktop {
   font-size: 22px;
   color: #6B6B6B;
+}
+@media (max-width: 768px) {
+  .topbar__menu-icono-desktop {
+    display: none;
+  }
 }
 .topbar__titulo {
   font-size: 17px;
   font-weight: 600;
   color: #2B2C2E;
+}
+@media (max-width: 480px) {
+  .topbar__titulo {
+    font-size: 15px;
+  }
 }
 .topbar__derecha {
   display: flex;
@@ -36,6 +85,11 @@
   border-radius: 20px;
   border: 1px solid #E0E0E0;
 }
+@media (max-width: 480px) {
+  .topbar__derecha {
+    padding: 5px 10px;
+  }
+}
 .topbar__usuario-icono {
   font-size: 20px;
   color: #477E63;
@@ -43,4 +97,9 @@
 .topbar__usuario-nombre {
   font-size: 13px;
   color: #6B6B6B;
+}
+@media (max-width: 480px) {
+  .topbar__usuario-nombre {
+    display: none;
+  }
 }/*# sourceMappingURL=topbar.component.css.map */

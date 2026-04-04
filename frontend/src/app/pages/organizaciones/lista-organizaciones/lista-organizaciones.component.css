@@ -5,9 +5,18 @@
   border-radius: 20px;
   font-size: 12px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .acciones {
   display: flex;
   gap: 6px;
+}
+
+@media (max-width: 600px) {
+  .tabla .col-ruc,
+  .tabla .col-telefono,
+  .tabla .col-responsable {
+    display: none;
+  }
 }/*# sourceMappingURL=lista-organizaciones.component.css.map */

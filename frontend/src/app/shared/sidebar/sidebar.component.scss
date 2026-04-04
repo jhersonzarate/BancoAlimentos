@@ -12,40 +12,57 @@
   flex-direction: column;
   z-index: 100;
   overflow-y: auto;
+  transition: transform 0.3s ease;
+
+  // En móvil, el sidebar se oculta fuera de pantalla por defecto
+  @media (max-width: 768px) {
+    transform: translateX(-100%);
+    box-shadow: none;
+
+    &.sidebar--abierto {
+      transform: translateX(0);
+      box-shadow: 4px 0 24px rgba(0, 0, 0, 0.25);
+    }
+  }
 
   &__marca {
     padding: $espaciado-lg $espaciado-md;
-    border-bottom: 1px solid rgba(255,255,255,0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+
   &__logo-img {
     width: 100%;
     max-width: 160px;
     height: auto;
     display: block;
-    margin: 0 auto;
   }
 
-  &__logo {
-    display: flex;
-    align-items: center;
-    gap: $espaciado-sm;
-  }
-
-  &__logo-icono {
-    font-size: 26px;
+  &__cerrar-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: $radio-sm;
     line-height: 1;
-  }
+    transition: background 0.15s;
+    flex-shrink: 0;
 
-  &__logo-nombre {
-    display: block;
-    font-size: 13px;
-    color: rgba(255,255,255,0.75);
-    line-height: 1.35;
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
 
-    &--bold {
-      font-weight: 700;
-      color: $blanco;
-      font-size: 14px;
+    .material-icons { font-size: 22px; }
+
+    @media (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -59,7 +76,7 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
     padding: 0 $espaciado-sm;
     margin-bottom: $espaciado-sm;
   }
@@ -68,39 +85,67 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px $espaciado-sm;
+    padding: 12px $espaciado-sm;
     border-radius: $radio-sm;
-    color: rgba(255,255,255,0.75);
+    color: rgba(255, 255, 255, 0.75);
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 4px;
     transition: background 0.15s, color 0.15s;
     cursor: pointer;
+    touch-action: manipulation;
+
+    // Área de toque más grande en móvil
+    @media (max-width: 768px) {
+      padding: 14px $espaciado-sm;
+    }
 
     &:hover {
-      background: rgba(255,255,255,0.1);
-      color: $blanco;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
     }
 
     &--activo {
       background: $naranja-base;
-      color: $blanco;
+      color: #fff;
 
       &:hover { background: color.adjust($naranja-base, $lightness: -5%); }
     }
   }
 
   &__link-icono {
-    font-size: 16px;
-    width: 20px;
+    font-size: 20px;
+    width: 24px;
     text-align: center;
+    flex-shrink: 0;
   }
 
   &__footer {
     padding: $espaciado-md;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 11px;
-    color: rgba(255,255,255,0.35);
+    color: rgba(255, 255, 255, 0.35);
     line-height: 1.6;
+  }
+}
+
+// Overlay que oscurece el fondo cuando el sidebar está abierto en móvil
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+
+  &.activo {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
   }
 }

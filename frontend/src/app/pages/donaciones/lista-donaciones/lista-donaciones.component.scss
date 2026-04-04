@@ -6,6 +6,11 @@
   align-items: center;
   gap: $espaciado-md;
   flex-wrap: wrap;
+  margin-bottom: $espaciado-md;
+
+  @media (max-width: 480px) {
+    gap: $espaciado-sm;
+  }
 
   &__etiqueta {
     font-size: 13px;
@@ -21,7 +26,7 @@
   }
 
   &__btn {
-    padding: 5px 14px;
+    padding: 6px 14px;
     border: 1px solid $gris-borde;
     border-radius: 20px;
     background: $blanco;
@@ -29,6 +34,13 @@
     cursor: pointer;
     color: $gris-secundario;
     transition: all 0.15s;
+    touch-action: manipulation;
+    min-height: 34px;
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
 
     &:hover { border-color: $verde-base; color: $verde-base; }
 
@@ -43,4 +55,14 @@
 .acciones {
   display: flex;
   gap: 6px;
+}
+
+// Tabla responsiva: en móvil muy pequeño, ocultar columnas menos importantes
+@media (max-width: 600px) {
+  .tabla {
+    .col-vencimiento,
+    .col-observaciones {
+      display: none;
+    }
+  }
 }

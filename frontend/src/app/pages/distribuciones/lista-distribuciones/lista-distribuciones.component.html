@@ -21,7 +21,7 @@
           <th>Donante / Alimento</th>
           <th>Organización</th>
           <th>Cantidad</th>
-          <th>Fecha entrega</th>
+          <th class="col-fecha">Fecha</th>
           <th>Estado</th>
           <th>Acciones</th>
         </tr>
@@ -35,7 +35,7 @@
           </td>
           <td>{{ d.nombreOrganizacion }}</td>
           <td>{{ d.cantidadEntregada }} {{ d.unidad }}</td>
-          <td>{{ d.fechaEntrega | date:'dd/MM/yyyy' }}</td>
+          <td class="col-fecha">{{ d.fechaEntrega | date:'dd/MM/yy' }}</td>
           <td>
             <span class="badge" [ngClass]="badgeClase(d.estado!)">
               {{ d.estado === 'ENTREGADO' ? 'Entregado' :

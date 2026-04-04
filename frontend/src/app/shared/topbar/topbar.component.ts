@@ -1,5 +1,6 @@
 // src/app/shared/topbar/topbar.component.ts
 import { Component, Input } from '@angular/core';
+import { SidebarService } from '../../services/sidebar.service';
 
 @Component({
   selector: 'app-topbar',
@@ -9,4 +10,10 @@ import { Component, Input } from '@angular/core';
 })
 export class TopbarComponent {
   @Input() titulo: string = 'Sistema de Donaciones';
+
+  constructor(private sidebarService: SidebarService) {}
+
+  toggleSidebar(): void {
+    this.sidebarService.toggle();
+  }
 }

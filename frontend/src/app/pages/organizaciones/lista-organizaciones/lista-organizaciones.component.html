@@ -19,10 +19,10 @@
         <tr>
           <th>#</th>
           <th>Nombre</th>
-          <th>RUC</th>
+          <th class="col-ruc">RUC</th>
           <th>Tipo</th>
-          <th>Responsable</th>
-          <th>Teléfono</th>
+          <th class="col-responsable">Responsable</th>
+          <th class="col-telefono">Teléfono</th>
           <th>Estado</th>
           <th>Acciones</th>
         </tr>
@@ -31,10 +31,10 @@
         <tr *ngFor="let o of organizaciones">
           <td class="texto-gris">{{ o.id }}</td>
           <td class="negrita">{{ o.nombre }}</td>
-          <td>{{ o.ruc || '—' }}</td>
+          <td class="col-ruc">{{ o.ruc || '—' }}</td>
           <td><span class="tipo-badge">{{ o.tipo }}</span></td>
-          <td>{{ o.responsable || '—' }}</td>
-          <td>{{ o.telefono || '—' }}</td>
+          <td class="col-responsable">{{ o.responsable || '—' }}</td>
+          <td class="col-telefono">{{ o.telefono || '—' }}</td>
           <td>
             <span class="badge"
                   [class.badge--distribuido]="o.activo"

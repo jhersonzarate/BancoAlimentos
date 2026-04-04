@@ -1,7 +1,14 @@
 <!-- src/app/shared/topbar/topbar.component.html -->
 <header class="topbar">
   <div class="topbar__izquierda">
-    <span class="material-icons topbar__menu-icono">menu</span>
+    <!-- Botón hamburguesa SOLO visible en móvil -->
+    <button class="topbar__menu-btn"
+            (click)="toggleSidebar()"
+            aria-label="Abrir menú">
+      <span class="material-icons">menu</span>
+    </button>
+    <!-- Ícono decorativo SOLO visible en escritorio -->
+    <span class="material-icons topbar__menu-icono-desktop">menu</span>
     <h2 class="topbar__titulo">{{ titulo }}</h2>
   </div>
   <div class="topbar__derecha">

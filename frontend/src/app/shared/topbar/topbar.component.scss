@@ -14,7 +14,17 @@
   justify-content: space-between;
   padding: 0 $espaciado-xl;
   z-index: 90;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: left 0.3s ease;
+
+  @media (max-width: 768px) {
+    left: 0;
+    padding: 0 $espaciado-md;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 $espaciado-sm;
+  }
 
   &__izquierda {
     display: flex;
@@ -22,15 +32,50 @@
     gap: $espaciado-sm;
   }
 
-  &__menu-icono {
+  &__menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: $radio-sm;
+    color: $gris-secundario;
+    transition: background 0.15s;
+    line-height: 1;
+    touch-action: manipulation;
+
+    &:hover {
+      background: $gris-fondo;
+      color: $gris-texto;
+    }
+
+    .material-icons { font-size: 24px; display: block; }
+
+    @media (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  // En escritorio, el ícono de menú actúa solo como decoración visual
+  &__menu-icono-desktop {
     font-size: 22px;
     color: $gris-secundario;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__titulo {
     font-size: 17px;
     font-weight: 600;
     color: $gris-texto;
+
+    @media (max-width: 480px) {
+      font-size: 15px;
+    }
   }
 
   &__derecha {
@@ -41,6 +86,10 @@
     padding: 6px 14px;
     border-radius: 20px;
     border: 1px solid $gris-borde;
+
+    @media (max-width: 480px) {
+      padding: 5px 10px;
+    }
   }
 
   &__usuario-icono {
@@ -51,5 +100,9 @@
   &__usuario-nombre {
     font-size: 13px;
     color: $gris-secundario;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
 }
