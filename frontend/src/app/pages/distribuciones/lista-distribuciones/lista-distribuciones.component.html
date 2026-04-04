@@ -1,0 +1,72 @@
+<!-- src/app/pages/distribuciones/lista-distribuciones/lista-distribuciones.component.html -->
+<app-topbar titulo="Distribución de alimentos"></app-topbar>
+
+<div class="page-body">
+  <div class="page-header">
+    <div>
+      <h1>Distribución de alimentos</h1>
+      <p>Control de asignación y entrega a organizaciones</p>
+    </div>
+    <button class="btn btn--naranja" routerLink="/distribuciones/nueva">
+      <span class="material-icons">add</span>
+      Nueva asignación
+    </button>
+  </div>
+
+  <div class="tabla-contenedor">
+    <table class="tabla" *ngIf="distribuciones.length > 0; else sinDatos">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Donante / Alimento</th>
+          <th>Organización</th>
+          <th>Cantidad</th>
+          <th>Fecha entrega</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of distribuciones">
+          <td class="texto-gris">{{ d.id }}</td>
+          <td>
+            <span class="negrita">{{ d.donanteDonacion }}</span><br>
+            <span class="texto-gris" style="font-size:12px">{{ d.tipoAlimento }}</span>
+          </td>
+          <td>{{ d.nombreOrganizacion }}</td>
+          <td>{{ d.cantidadEntregada }} {{ d.unidad }}</td>
+          <td>{{ d.fechaEntrega | date:'dd/MM/yyyy' }}</td>
+          <td>
+            <span class="badge" [ngClass]="badgeClase(d.estado!)">
+              {{ d.estado === 'ENTREGADO' ? 'Entregado' :
+                 d.estado === 'CANCELADO' ? 'Cancelado' : 'Pendiente' }}
+            </span>
+          </td>
+          <td>
+            <div class="acciones">
+              <button class="btn btn--primario btn--icono"
+                      *ngIf="d.estado === 'PENDIENTE'"
+                      title="Confirmar entrega"
+                      (click)="marcarEntregado(d.id!)">
+                <span class="material-icons">check_circle</span>
+              </button>
+              <button class="btn btn--peligro btn--icono"
+                      *ngIf="d.estado === 'PENDIENTE'"
+                      title="Cancelar"
+                      (click)="cancelar(d.id!)">
+                <span class="material-icons">cancel</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #sinDatos>
+      <div class="estado-vacio">
+        <span class="material-icons icono">local_shipping</span>
+        <p>No hay distribuciones registradas</p>
+      </div>
+    </ng-template>
+  </div>
+</div>

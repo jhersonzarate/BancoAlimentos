@@ -1,0 +1,55 @@
+// src/app/shared/topbar/topbar.component.scss
+@use '../../../styles/variables' as *;
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: $sidebar-ancho;
+  right: 0;
+  height: $topbar-alto;
+  background: $blanco;
+  border-bottom: 1px solid $gris-borde;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $espaciado-xl;
+  z-index: 90;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+
+  &__izquierda {
+    display: flex;
+    align-items: center;
+    gap: $espaciado-sm;
+  }
+
+  &__menu-icono {
+    font-size: 22px;
+    color: $gris-secundario;
+  }
+
+  &__titulo {
+    font-size: 17px;
+    font-weight: 600;
+    color: $gris-texto;
+  }
+
+  &__derecha {
+    display: flex;
+    align-items: center;
+    gap: $espaciado-xs;
+    background: $gris-fondo;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid $gris-borde;
+  }
+
+  &__usuario-icono {
+    font-size: 20px;
+    color: $verde-base;
+  }
+
+  &__usuario-nombre {
+    font-size: 13px;
+    color: $gris-secundario;
+  }
+}

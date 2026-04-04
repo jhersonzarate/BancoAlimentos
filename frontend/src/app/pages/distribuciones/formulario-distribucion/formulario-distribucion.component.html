@@ -1,0 +1,83 @@
+<!-- src/app/pages/distribuciones/formulario-distribucion/formulario-distribucion.component.html -->
+<app-topbar titulo="Nueva asignación"></app-topbar>
+
+<div class="page-body">
+  <div class="page-header">
+    <div>
+      <h1>Asignar donación a organización</h1>
+      <p>Registre la distribución de alimentos a una entidad beneficiaria</p>
+    </div>
+    <button class="btn btn--secundario" routerLink="/distribuciones">
+      <span class="material-icons">arrow_back</span>
+      Volver
+    </button>
+  </div>
+
+  <div class="card formulario-card">
+    <form [formGroup]="form" (ngSubmit)="guardar()">
+
+      <div class="form-grupo">
+        <label>Donación *</label>
+        <select formControlName="donacionId">
+          <option value="">-- Seleccione una donación --</option>
+          <option *ngFor="let d of donaciones" [value]="d.id">
+            #{{ d.id }} — {{ d.donante }} | {{ d.tipoAlimento }} | {{ d.cantidad }} {{ d.unidad }}
+          </option>
+        </select>
+        <span class="error-msg"
+              *ngIf="form.get('donacionId')?.invalid && form.get('donacionId')?.touched">
+          Seleccione una donación
+        </span>
+      </div>
+
+      <div class="form-grupo">
+        <label>Organización beneficiaria *</label>
+        <select formControlName="organizacionId">
+          <option value="">-- Seleccione una organización --</option>
+          <option *ngFor="let o of organizaciones" [value]="o.id">
+            {{ o.nombre }} ({{ o.tipo }})
+          </option>
+        </select>
+        <span class="error-msg"
+              *ngIf="form.get('organizacionId')?.invalid && form.get('organizacionId')?.touched">
+          Seleccione una organización
+        </span>
+      </div>
+
+      <div class="form-fila">
+        <div class="form-grupo">
+          <label>Cantidad a entregar *</label>
+          <input type="number" formControlName="cantidadEntregada"
+                 placeholder="0.00" min="0.01" step="0.01">
+          <span class="error-msg"
+                *ngIf="form.get('cantidadEntregada')?.invalid && form.get('cantidadEntregada')?.touched">
+            Ingrese una cantidad válida
+          </span>
+        </div>
+
+        <div class="form-grupo">
+          <label>Fecha de entrega</label>
+          <input type="date" formControlName="fechaEntrega">
+        </div>
+      </div>
+
+      <div class="form-grupo">
+        <label>Notas adicionales</label>
+        <textarea formControlName="notas"
+                  placeholder="Observaciones sobre la entrega..."></textarea>
+      </div>
+
+      <div class="formulario-acciones">
+        <button type="button" class="btn btn--secundario" routerLink="/distribuciones">
+          <span class="material-icons">close</span>
+          Cancelar
+        </button>
+        <button type="submit" class="btn btn--naranja" [disabled]="form.invalid || guardando">
+          <span class="material-icons">local_shipping</span>
+          {{ guardando ? 'Registrando...' : 'Registrar distribución' }}
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>

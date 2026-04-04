@@ -1,0 +1,16 @@
+// lista-organizaciones.component.scss
+@use '../../../../styles/variables' as *;
+
+.tipo-badge {
+  background: $verde-suave;
+  color: $verde-base;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.acciones {
+  display: flex;
+  gap: 6px;
+}

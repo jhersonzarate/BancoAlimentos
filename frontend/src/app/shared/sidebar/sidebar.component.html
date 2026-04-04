@@ -1,0 +1,45 @@
+<!-- src/app/shared/sidebar/sidebar.component.html -->
+<aside class="sidebar">
+
+  <div class="sidebar__marca">
+    <img src="logo-banco.png" alt="Banco de Alimentos Perú" class="sidebar__logo-img">
+  </div>
+
+  <nav class="sidebar__nav">
+    <p class="sidebar__seccion-titulo">Menú principal</p>
+
+    <a class="sidebar__link"
+       routerLink="/dashboard"
+       routerLinkActive="sidebar__link--activo">
+      <span class="material-icons sidebar__link-icono">dashboard</span>
+      Dashboard
+    </a>
+
+    <a class="sidebar__link"
+       routerLink="/donaciones"
+       routerLinkActive="sidebar__link--activo">
+      <span class="material-icons sidebar__link-icono">volunteer_activism</span>
+      Donaciones
+    </a>
+
+    <a class="sidebar__link"
+       routerLink="/organizaciones"
+       routerLinkActive="sidebar__link--activo">
+      <span class="material-icons sidebar__link-icono">corporate_fare</span>
+      Organizaciones
+    </a>
+
+    <a class="sidebar__link"
+       routerLink="/distribuciones"
+       routerLinkActive="sidebar__link--activo">
+      <span class="material-icons sidebar__link-icono">local_shipping</span>
+      Distribución
+    </a>
+  </nav>
+
+  <div class="sidebar__footer">
+    <p>Sistema v1.0</p>
+    <p>Gestión de Donaciones</p>
+  </div>
+
+</aside>

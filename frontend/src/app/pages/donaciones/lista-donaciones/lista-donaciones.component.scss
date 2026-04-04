@@ -1,0 +1,46 @@
+// src/app/pages/donaciones/lista-donaciones/lista-donaciones.component.scss
+@use '../../../../styles/variables' as *;
+
+.filtros {
+  display: flex;
+  align-items: center;
+  gap: $espaciado-md;
+  flex-wrap: wrap;
+
+  &__etiqueta {
+    font-size: 13px;
+    font-weight: 600;
+    color: $gris-secundario;
+    white-space: nowrap;
+  }
+
+  &__opciones {
+    display: flex;
+    gap: $espaciado-xs;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    padding: 5px 14px;
+    border: 1px solid $gris-borde;
+    border-radius: 20px;
+    background: $blanco;
+    font-size: 13px;
+    cursor: pointer;
+    color: $gris-secundario;
+    transition: all 0.15s;
+
+    &:hover { border-color: $verde-base; color: $verde-base; }
+
+    &--activo {
+      background: $verde-base;
+      color: $blanco;
+      border-color: $verde-base;
+    }
+  }
+}
+
+.acciones {
+  display: flex;
+  gap: 6px;
+}

@@ -1,0 +1,91 @@
+<!-- src/app/pages/dashboard/dashboard.component.html -->
+<app-topbar titulo="Dashboard"></app-topbar>
+
+<div class="page-body">
+  <div class="page-header">
+    <div>
+      <h1>Resumen general</h1>
+      <p>Vista general del sistema de donación de alimentos</p>
+    </div>
+  </div>
+
+  <div class="dashboard-grid" *ngIf="resumen">
+
+    <div class="metrica-card metrica-card--verde">
+      <span class="material-icons metrica-card__icono">volunteer_activism</span>
+      <div class="metrica-card__info">
+        <span class="metrica-card__valor">{{ resumen.totalDonaciones }}</span>
+        <span class="metrica-card__etiqueta">Total donaciones</span>
+      </div>
+    </div>
+
+    <div class="metrica-card metrica-card--naranja">
+      <span class="material-icons metrica-card__icono">pending_actions</span>
+      <div class="metrica-card__info">
+        <span class="metrica-card__valor">{{ resumen.donacionesPendientes }}</span>
+        <span class="metrica-card__etiqueta">Pendientes</span>
+      </div>
+    </div>
+
+    <div class="metrica-card metrica-card--azul">
+      <span class="material-icons metrica-card__icono">corporate_fare</span>
+      <div class="metrica-card__info">
+        <span class="metrica-card__valor">{{ resumen.organizacionesActivas }}</span>
+        <span class="metrica-card__etiqueta">Organizaciones activas</span>
+      </div>
+    </div>
+
+    <div class="metrica-card metrica-card--verde-oscuro">
+      <span class="material-icons metrica-card__icono">check_circle</span>
+      <div class="metrica-card__info">
+        <span class="metrica-card__valor">{{ resumen.distribucionesEntregadas }}</span>
+        <span class="metrica-card__etiqueta">Entregas realizadas</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="estado-vacio" *ngIf="cargando">
+    <span class="material-icons icono">hourglass_empty</span>
+    <p>Cargando datos...</p>
+  </div>
+
+  <div class="dashboard-detalle" *ngIf="resumen">
+    <div class="card">
+      <h3 class="seccion-titulo">Estado de donaciones</h3>
+      <div class="estado-lista">
+        <div class="estado-item">
+          <span class="badge badge--pendiente">Pendiente</span>
+          <span class="estado-item__valor">{{ resumen.donacionesPendientes }}</span>
+        </div>
+        <div class="estado-item">
+          <span class="badge badge--en-proceso">En proceso</span>
+          <span class="estado-item__valor">{{ resumen.donacionesEnProceso }}</span>
+        </div>
+        <div class="estado-item">
+          <span class="badge badge--distribuido">Distribuido</span>
+          <span class="estado-item__valor">{{ resumen.donacionesDistribuidas }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="seccion-titulo">Estado de distribuciones</h3>
+      <div class="estado-lista">
+        <div class="estado-item">
+          <span class="badge badge--pendiente">Pendiente</span>
+          <span class="estado-item__valor">{{ resumen.distribucionesPendientes }}</span>
+        </div>
+        <div class="estado-item">
+          <span class="badge badge--entregado">Entregado</span>
+          <span class="estado-item__valor">{{ resumen.distribucionesEntregadas }}</span>
+        </div>
+        <div class="estado-item">
+          <span class="texto-gris">Total registros</span>
+          <span class="estado-item__valor">{{ resumen.totalDistribuciones }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

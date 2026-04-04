@@ -1,0 +1,81 @@
+<!-- src/app/pages/organizaciones/formulario-organizacion/formulario-organizacion.component.html -->
+<app-topbar [titulo]="esEdicion ? 'Editar organización' : 'Nueva organización'"></app-topbar>
+
+<div class="page-body">
+  <div class="page-header">
+    <div>
+      <h1>{{ esEdicion ? 'Editar organización' : 'Registrar organización' }}</h1>
+      <p>Datos de la entidad beneficiaria</p>
+    </div>
+    <button class="btn btn--secundario" routerLink="/organizaciones">
+      <span class="material-icons">arrow_back</span>
+      Volver
+    </button>
+  </div>
+
+  <div class="card formulario-card">
+    <form [formGroup]="form" (ngSubmit)="guardar()">
+
+      <div class="form-fila">
+        <div class="form-grupo">
+          <label>Nombre de la organización *</label>
+          <input type="text" formControlName="nombre" placeholder="Ej: Comedor Popular San Juan">
+          <span class="error-msg" *ngIf="form.get('nombre')?.invalid && form.get('nombre')?.touched">
+            El nombre es obligatorio
+          </span>
+        </div>
+
+        <div class="form-grupo">
+          <label>Tipo de organización *</label>
+          <select formControlName="tipo">
+            <option value="">-- Seleccione --</option>
+            <option value="Comedor Popular">Comedor Popular</option>
+            <option value="Albergue">Albergue</option>
+            <option value="ONG">ONG</option>
+            <option value="Wawa Wasi">Wawa Wasi</option>
+            <option value="Centro Comunitario">Centro Comunitario</option>
+            <option value="Iglesia">Iglesia</option>
+            <option value="Otro">Otro</option>
+          </select>
+          <span class="error-msg" *ngIf="form.get('tipo')?.invalid && form.get('tipo')?.touched">
+            Seleccione un tipo
+          </span>
+        </div>
+      </div>
+
+      <div class="form-fila">
+        <div class="form-grupo">
+          <label>RUC</label>
+          <input type="text" formControlName="ruc" placeholder="20xxxxxxxxx" maxlength="11">
+        </div>
+
+        <div class="form-grupo">
+          <label>Teléfono</label>
+          <input type="text" formControlName="telefono" placeholder="01-xxxxxxx o 9xxxxxxxx">
+        </div>
+      </div>
+
+      <div class="form-grupo">
+        <label>Dirección</label>
+        <input type="text" formControlName="direccion" placeholder="Av. / Jr. / Calle, número, distrito">
+      </div>
+
+      <div class="form-grupo">
+        <label>Nombre del responsable</label>
+        <input type="text" formControlName="responsable" placeholder="Nombres y apellidos">
+      </div>
+
+      <div class="formulario-acciones">
+        <button type="button" class="btn btn--secundario" routerLink="/organizaciones">
+          <span class="material-icons">close</span>
+          Cancelar
+        </button>
+        <button type="submit" class="btn btn--primario" [disabled]="form.invalid || guardando">
+          <span class="material-icons">save</span>
+          {{ guardando ? 'Guardando...' : (esEdicion ? 'Actualizar' : 'Registrar') }}
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>

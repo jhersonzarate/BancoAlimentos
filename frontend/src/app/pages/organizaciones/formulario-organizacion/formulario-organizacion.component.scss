@@ -1,0 +1,13 @@
+// formulario-organizacion.component.scss
+@use '../../../../styles/variables' as *;
+
+.formulario-card { max-width: 720px; }
+
+.formulario-acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: $espaciado-sm;
+  margin-top: $espaciado-lg;
+  padding-top: $espaciado-md;
+  border-top: 1px solid $gris-borde;
+}

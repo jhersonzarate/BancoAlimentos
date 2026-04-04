@@ -1,0 +1,82 @@
+<!-- src/app/pages/donaciones/lista-donaciones/lista-donaciones.component.html -->
+<app-topbar titulo="Donaciones"></app-topbar>
+
+<div class="page-body">
+  <div class="page-header">
+    <div>
+      <h1>Donaciones</h1>
+      <p>Registro de alimentos donados al banco</p>
+    </div>
+    <button class="btn btn--primario" routerLink="/donaciones/nueva">
+      <span class="material-icons">add</span>
+      Nueva donación
+    </button>
+  </div>
+
+  <!-- Filtro por estado -->
+  <div class="filtros card mb-md">
+    <span class="filtros__etiqueta">Filtrar por estado:</span>
+    <div class="filtros__opciones">
+      <button class="filtros__btn" [class.filtros__btn--activo]="estadoFiltro === ''"
+              (click)="filtrar('')">Todos</button>
+      <button class="filtros__btn" [class.filtros__btn--activo]="estadoFiltro === 'PENDIENTE'"
+              (click)="filtrar('PENDIENTE')">Pendiente</button>
+      <button class="filtros__btn" [class.filtros__btn--activo]="estadoFiltro === 'EN_PROCESO'"
+              (click)="filtrar('EN_PROCESO')">En proceso</button>
+      <button class="filtros__btn" [class.filtros__btn--activo]="estadoFiltro === 'DISTRIBUIDO'"
+              (click)="filtrar('DISTRIBUIDO')">Distribuido</button>
+    </div>
+  </div>
+
+  <!-- Tabla -->
+  <div class="tabla-contenedor">
+    <table class="tabla" *ngIf="donaciones.length > 0; else sinDatos">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Donante</th>
+          <th>Alimento</th>
+          <th>Cantidad</th>
+          <th>Fecha donación</th>
+          <th>Vencimiento</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of donaciones">
+          <td class="texto-gris">{{ d.id }}</td>
+          <td class="negrita">{{ d.donante }}</td>
+          <td>{{ d.tipoAlimento }}</td>
+          <td>{{ d.cantidad }} {{ d.unidad }}</td>
+          <td>{{ d.fechaDonacion | date:'dd/MM/yyyy' }}</td>
+          <td>{{ d.fechaVencimiento ? (d.fechaVencimiento | date:'dd/MM/yyyy') : '—' }}</td>
+          <td>
+            <span class="badge" [ngClass]="badgeClase(d.estado!)">
+              {{ etiquetaEstado(d.estado!) }}
+            </span>
+          </td>
+          <td>
+            <div class="acciones">
+              <button class="btn btn--icono" title="Editar"
+                      [routerLink]="['/donaciones/editar', d.id]">
+                <span class="material-icons">edit</span>
+              </button>
+              <button class="btn btn--peligro btn--icono" title="Eliminar"
+                      (click)="eliminar(d.id!)">
+                <span class="material-icons">delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #sinDatos>
+      <div class="estado-vacio">
+        <span class="material-icons icono">inventory_2</span>
+        <p>No hay donaciones registradas</p>
+      </div>
+    </ng-template>
+  </div>
+</div>

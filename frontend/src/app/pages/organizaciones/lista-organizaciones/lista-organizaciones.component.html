@@ -1,0 +1,68 @@
+<!-- src/app/pages/organizaciones/lista-organizaciones/lista-organizaciones.component.html -->
+<app-topbar titulo="Organizaciones"></app-topbar>
+
+<div class="page-body">
+  <div class="page-header">
+    <div>
+      <h1>Organizaciones beneficiarias</h1>
+      <p>Entidades que reciben las donaciones de alimentos</p>
+    </div>
+    <button class="btn btn--primario" routerLink="/organizaciones/nueva">
+      <span class="material-icons">add</span>
+      Nueva organización
+    </button>
+  </div>
+
+  <div class="tabla-contenedor">
+    <table class="tabla" *ngIf="organizaciones.length > 0; else sinDatos">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>RUC</th>
+          <th>Tipo</th>
+          <th>Responsable</th>
+          <th>Teléfono</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let o of organizaciones">
+          <td class="texto-gris">{{ o.id }}</td>
+          <td class="negrita">{{ o.nombre }}</td>
+          <td>{{ o.ruc || '—' }}</td>
+          <td><span class="tipo-badge">{{ o.tipo }}</span></td>
+          <td>{{ o.responsable || '—' }}</td>
+          <td>{{ o.telefono || '—' }}</td>
+          <td>
+            <span class="badge"
+                  [class.badge--distribuido]="o.activo"
+                  [class.badge--cancelado]="!o.activo">
+              {{ o.activo ? 'Activa' : 'Inactiva' }}
+            </span>
+          </td>
+          <td>
+            <div class="acciones">
+              <button class="btn btn--icono" title="Editar"
+                      [routerLink]="['/organizaciones/editar', o.id]">
+                <span class="material-icons">edit</span>
+              </button>
+              <button class="btn btn--peligro btn--icono" title="Desactivar"
+                      (click)="desactivar(o.id!)">
+                <span class="material-icons">block</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #sinDatos>
+      <div class="estado-vacio">
+        <span class="material-icons icono">corporate_fare</span>
+        <p>No hay organizaciones registradas</p>
+      </div>
+    </ng-template>
+  </div>
+</div>

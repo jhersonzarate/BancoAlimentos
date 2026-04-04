@@ -1,0 +1,50 @@
+// src/styles/variables.scss
+// ============================================================
+// Variables globales — Sistema Banco de Alimentos Perú
+// ============================================================
+
+// Paleta principal
+$verde-base:      #2E7D32;
+$verde-claro:     #4CAF50;
+$verde-suave:     #E8F5E9;
+$verde-borde:     #A5D6A7;
+
+$naranja-base:    #E65100;
+$naranja-claro:   #FF7043;
+$naranja-suave:   #FBE9E7;
+
+$gris-texto:      #2C2C2C;
+$gris-secundario: #6B6B6B;
+$gris-borde:      #E0E0E0;
+$gris-fondo:      #F5F5F5;
+$blanco:          #FFFFFF;
+
+// Estado
+$color-pendiente:   #F57C00;
+$color-en-proceso:  #1565C0;
+$color-distribuido: #2E7D32;
+$color-cancelado:   #C62828;
+$color-entregado:   #2E7D32;
+
+// Tipografía
+$fuente-principal: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+// Espaciado
+$espaciado-xs: 4px;
+$espaciado-sm: 8px;
+$espaciado-md: 16px;
+$espaciado-lg: 24px;
+$espaciado-xl: 32px;
+
+// Bordes
+$radio-sm: 6px;
+$radio-md: 10px;
+$radio-lg: 16px;
+
+// Sombras
+$sombra-tarjeta: 0 2px 8px rgba(0, 0, 0, 0.08);
+$sombra-hover:   0 4px 16px rgba(0, 0, 0, 0.12);
+
+// Sidebar
+$sidebar-ancho: 240px;
+$topbar-alto:   64px;
