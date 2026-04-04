@@ -1,0 +1,12 @@
+.formulario-card {
+  max-width: 720px;
+}
+
+.formulario-acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #E0E0E0;
+}/*# sourceMappingURL=formulario-donacion.component.css.map */

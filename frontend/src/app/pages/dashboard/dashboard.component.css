@@ -1,0 +1,94 @@
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.metrica-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid transparent;
+  transition: box-shadow 0.2s;
+}
+.metrica-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+.metrica-card--verde {
+  border-left-color: #477E63;
+}
+.metrica-card--naranja {
+  border-left-color: #DB3D47;
+}
+.metrica-card--azul {
+  border-left-color: #1565C0;
+}
+.metrica-card--verde-oscuro {
+  border-left-color: #1B5E20;
+}
+.metrica-card__icono {
+  font-size: 32px;
+  line-height: 1;
+}
+.metrica-card__info {
+  display: flex;
+  flex-direction: column;
+}
+.metrica-card__valor {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2B2C2E;
+  line-height: 1.1;
+}
+.metrica-card__etiqueta {
+  font-size: 13px;
+  color: #6B6B6B;
+  margin-top: 2px;
+}
+
+.dashboard-detalle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 700px) {
+  .dashboard-detalle {
+    grid-template-columns: 1fr;
+  }
+}
+
+.seccion-titulo {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2B2C2E;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.estado-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.estado-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #E0E0E0;
+}
+.estado-item:last-child {
+  border-bottom: none;
+}
+.estado-item__valor {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2B2C2E;
+}/*# sourceMappingURL=dashboard.component.css.map */

@@ -1,0 +1,46 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 240px;
+  right: 0;
+  height: 64px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  z-index: 90;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+.topbar__izquierda {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.topbar__menu-icono {
+  font-size: 22px;
+  color: #6B6B6B;
+}
+.topbar__titulo {
+  font-size: 17px;
+  font-weight: 600;
+  color: #2B2C2E;
+}
+.topbar__derecha {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #F6F6F6;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #E0E0E0;
+}
+.topbar__usuario-icono {
+  font-size: 20px;
+  color: #477E63;
+}
+.topbar__usuario-nombre {
+  font-size: 13px;
+  color: #6B6B6B;
+}/*# sourceMappingURL=topbar.component.css.map */

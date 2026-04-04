@@ -1,0 +1,13 @@
+.tipo-badge {
+  background: #E4F8EE;
+  color: #477E63;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.acciones {
+  display: flex;
+  gap: 6px;
+}/*# sourceMappingURL=lista-organizaciones.component.css.map */
