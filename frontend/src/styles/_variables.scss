@@ -1,30 +1,30 @@
-// src/styles/variables.scss
-// ============================================================
-// Variables globales — Sistema Banco de Alimentos Perú
-// ============================================================
+// src/styles/_variables.scss
 
-// Paleta principal
-$verde-base:      #2E7D32;
-$verde-claro:     #4CAF50;
-$verde-suave:     #E8F5E9;
-$verde-borde:     #A5D6A7;
+// Paleta principal — Banco de Alimentos Perú
+$verde-base:      #477E63;
+$verde-claro:     #73C39A;
+$verde-suave:     #E4F8EE;
+$verde-borde:     #73C39A;
 
-$naranja-base:    #E65100;
-$naranja-claro:   #FF7043;
-$naranja-suave:   #FBE9E7;
+$naranja-base:    #DB3D47;
+$naranja-claro:   #F0555F;
+$naranja-suave:   #FFEBEE;
 
-$gris-texto:      #2C2C2C;
+$amarillo-base:   #FFDF69;
+$amarillo-claro:  #FFF9EA;
+
+$gris-texto:      #2B2C2E;
 $gris-secundario: #6B6B6B;
 $gris-borde:      #E0E0E0;
-$gris-fondo:      #F5F5F5;
+$gris-fondo:      #F6F6F6;
 $blanco:          #FFFFFF;
 
 // Estado
 $color-pendiente:   #F57C00;
 $color-en-proceso:  #1565C0;
-$color-distribuido: #2E7D32;
-$color-cancelado:   #C62828;
-$color-entregado:   #2E7D32;
+$color-distribuido: #477E63;
+$color-cancelado:   #DB3D47;
+$color-entregado:   #477E63;
 
 // Tipografía
 $fuente-principal: 'Inter', 'Segoe UI', system-ui, sans-serif;
