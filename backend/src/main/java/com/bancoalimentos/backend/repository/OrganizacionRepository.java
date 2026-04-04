@@ -12,4 +12,5 @@ public interface OrganizacionRepository extends JpaRepository<Organizacion, Long
     List<Organizacion> findByActivoTrueOrderByNombreAsc();
 
     boolean existsByRuc(String ruc);
+    List<Organizacion> findAllByOrderByIdAsc();
 }

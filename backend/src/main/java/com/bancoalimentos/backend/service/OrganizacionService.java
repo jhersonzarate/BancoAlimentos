@@ -24,8 +24,8 @@ public class OrganizacionService {
     }
 
     public List<OrganizacionDTO.Response> listarTodas() {
-        return organizacionRepository.findAll()
-                .stream().map(this::toResponse).collect(Collectors.toList());
+        return organizacionRepository.findAllByOrderByIdAsc()
+        .stream().map(this::toResponse).collect(Collectors.toList());
     }
 
     public OrganizacionDTO.Response buscarPorId(Long id) {
