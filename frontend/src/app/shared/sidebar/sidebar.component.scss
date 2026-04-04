@@ -1,3 +1,4 @@
+// src/app/shared/sidebar/sidebar.component.scss — CON USUARIO/LOGOUT
 @use 'sass:color';
 @use '../../../styles/variables' as *;
 
@@ -7,14 +8,13 @@
   top: 0;
   width: $sidebar-ancho;
   height: 100vh;
-  background: #477E63;
+  background: $verde-base;
   display: flex;
   flex-direction: column;
   z-index: 100;
   overflow-y: auto;
   transition: transform 0.3s ease;
 
-  // En móvil, el sidebar se oculta fuera de pantalla por defecto
   @media (max-width: 768px) {
     transform: translateX(-100%);
     box-shadow: none;
@@ -31,6 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-shrink: 0;
   }
 
   &__logo-img {
@@ -95,7 +96,6 @@
     cursor: pointer;
     touch-action: manipulation;
 
-    // Área de toque más grande en móvil
     @media (max-width: 768px) {
       padding: 14px $espaciado-sm;
     }
@@ -120,16 +120,86 @@
     flex-shrink: 0;
   }
 
+  // ── Sección de usuario al pie ──
+  &__usuario {
+    margin: 0 $espaciado-sm $espaciado-sm;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: $radio-md;
+    padding: $espaciado-md;
+    flex-shrink: 0;
+  }
+
+  &__usuario-info {
+    display: flex;
+    align-items: center;
+    gap: $espaciado-sm;
+    margin-bottom: $espaciado-sm;
+  }
+
+  &__usuario-avatar {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.9);
+    flex-shrink: 0;
+  }
+
+  &__usuario-datos {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  &__usuario-nombre {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__usuario-email {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.55);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__logout {
+    display: flex;
+    align-items: center;
+    gap: $espaciado-sm;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: $radio-sm;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    touch-action: manipulation;
+
+    .material-icons { font-size: 18px; }
+
+    &:hover {
+      background: rgba(219, 61, 71, 0.4);
+      color: #fff;
+      border-color: rgba(219, 61, 71, 0.5);
+    }
+  }
+
   &__footer {
     padding: $espaciado-md;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 11px;
     color: rgba(255, 255, 255, 0.35);
     line-height: 1.6;
+    flex-shrink: 0;
   }
 }
 
-// Overlay que oscurece el fondo cuando el sidebar está abierto en móvil
 .sidebar-overlay {
   display: none;
   position: fixed;

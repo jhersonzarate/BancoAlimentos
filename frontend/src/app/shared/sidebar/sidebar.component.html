@@ -1,4 +1,4 @@
-<!-- src/app/shared/sidebar/sidebar.component.html -->
+<!-- src/app/shared/sidebar/sidebar.component.html — CON LOGOUT -->
 
 <!-- Overlay para cerrar el sidebar en móvil -->
 <div class="sidebar-overlay"
@@ -50,6 +50,21 @@
       Distribución
     </a>
   </nav>
+
+  <!-- Usuario y logout -->
+  <div class="sidebar__usuario" *ngIf="usuario">
+    <div class="sidebar__usuario-info">
+      <span class="material-icons sidebar__usuario-avatar">account_circle</span>
+      <div class="sidebar__usuario-datos">
+        <span class="sidebar__usuario-nombre">{{ usuario.nombre }}</span>
+        <span class="sidebar__usuario-email">{{ usuario.email }}</span>
+      </div>
+    </div>
+    <button class="sidebar__logout" (click)="cerrarSesion()" title="Cerrar sesión">
+      <span class="material-icons">logout</span>
+      Cerrar sesión
+    </button>
+  </div>
 
   <div class="sidebar__footer">
     <p>Sistema v1.0</p>

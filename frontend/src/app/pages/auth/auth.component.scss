@@ -1,0 +1,397 @@
+// src/app/pages/auth/auth.component.scss
+@use '../../../styles/variables' as *;
+@use 'sass:color';
+
+// ══════════════════════════════════════════════════
+// LAYOUT PRINCIPAL
+// ══════════════════════════════════════════════════
+.auth-root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ══════════════════════════════════════════════════
+// PANEL IZQUIERDO — BRANDING
+// ══════════════════════════════════════════════════
+.auth-brand {
+  background: $verde-base;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 40px;
+  min-height: 100vh;
+
+  @media (max-width: 900px) {
+    display: none; // Ocultar en móvil
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    max-width: 360px;
+  }
+
+  &__logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 40px;
+    filter: brightness(0) invert(1); // Logo blanco
+    // Si el logo ya es claro, quitar esta línea
+  }
+
+  &__titulo {
+    font-size: 42px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.6;
+    margin-bottom: 48px;
+  }
+
+  &__stats {
+    display: flex;
+    gap: 32px;
+  }
+
+  // Decoraciones geométricas de fondo
+  &__deco {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+
+    &--1 {
+      width: 380px;
+      height: 380px;
+      bottom: -100px;
+      right: -80px;
+    }
+    &--2 {
+      width: 200px;
+      height: 200px;
+      top: -50px;
+      left: -60px;
+    }
+    &--3 {
+      width: 120px;
+      height: 120px;
+      top: 40%;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+  }
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+
+  &__num {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+  }
+
+  &__lab {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 4px;
+  }
+}
+
+// ══════════════════════════════════════════════════
+// PANEL DERECHO — FORMULARIO
+// ══════════════════════════════════════════════════
+.auth-panel {
+  background: $gris-fondo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  min-height: 100vh;
+
+  @media (max-width: 900px) {
+    // En móvil ocupa toda la pantalla con un degradado sutil
+    background: linear-gradient(135deg, $verde-suave 0%, $gris-fondo 60%);
+  }
+}
+
+.auth-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.10);
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 420px;
+
+  @media (max-width: 480px) {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+}
+
+// ══════════════════════════════════════════════════
+// TABS
+// ══════════════════════════════════════════════════
+.auth-tabs {
+  position: relative;
+  display: flex;
+  background: $gris-fondo;
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 32px;
+}
+
+.auth-tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: $gris-secundario;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  transition: color 0.2s;
+
+  &--activo {
+    color: $gris-texto;
+  }
+}
+
+.auth-tab__indicator {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--right {
+    transform: translateX(100%);
+  }
+}
+
+// ══════════════════════════════════════════════════
+// FORMULARIO
+// ══════════════════════════════════════════════════
+.auth-form {
+  .auth-form__bienvenida {
+    margin-bottom: 28px;
+
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: $gris-texto;
+      margin-bottom: 4px;
+    }
+
+    p {
+      font-size: 14px;
+      color: $gris-secundario;
+    }
+  }
+}
+
+// Sobrescribir .form-grupo solo en el contexto de auth
+.auth-card .form-grupo {
+  margin-bottom: 20px;
+
+  label {
+    font-size: 13px;
+    font-weight: 600;
+    color: $gris-texto;
+    margin-bottom: 6px;
+  }
+}
+
+// ── Input con ícono ──
+.input-icon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    font-size: 20px;
+    color: $gris-secundario;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  input {
+    padding-left: 42px !important; // espacio para el ícono izquierdo
+    padding-right: 42px !important; // espacio para el ojo
+  }
+}
+
+// ── Botón ojo ──
+.toggle-pass {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $gris-secundario;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+
+  &:hover {
+    color: $verde-base;
+    background: $verde-suave;
+  }
+
+  .material-icons {
+    font-size: 20px;
+  }
+}
+
+// ── Mensaje de error global ──
+.auth-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: $naranja-suave;
+  border: 1px solid #FFCDD2;
+  color: $naranja-base;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+
+  .material-icons { font-size: 18px; flex-shrink: 0; }
+}
+
+// ── Botón principal ──
+.btn-auth {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 24px;
+  background: $verde-base;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+  box-shadow: 0 4px 14px rgba(71, 126, 99, 0.35);
+  margin-top: 8px;
+
+  &:hover:not(:disabled) {
+    background: color.adjust($verde-base, $lightness: -6%);
+    box-shadow: 0 6px 18px rgba(71, 126, 99, 0.45);
+  }
+
+  &:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  .material-icons { font-size: 20px; }
+}
+
+// ── Spinner ──
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255,255,255,0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+// ── Switch modo ──
+.auth-switch {
+  text-align: center;
+  font-size: 13px;
+  color: $gris-secundario;
+  margin-top: 20px;
+
+  .link-btn {
+    background: none;
+    border: none;
+    color: $verde-base;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 0;
+    margin-left: 4px;
+    transition: color 0.15s;
+
+    &:hover { color: color.adjust($verde-base, $lightness: -10%); text-decoration: underline; }
+  }
+}
+
+// ══════════════════════════════════════════════════
+// FORTALEZA DE CONTRASEÑA
+// ══════════════════════════════════════════════════
+.pass-strength {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+
+  &__bar {
+    flex: 1;
+    height: 4px;
+    background: $gris-borde;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  &__fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease, background 0.3s ease;
+
+    &.debil  { background: $naranja-base; }
+    &.media  { background: #F59E0B; }
+    &.fuerte { background: $verde-base; }
+  }
+
+  &__label {
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 38px;
+    text-align: right;
+    color: $gris-secundario;
+  }
+}

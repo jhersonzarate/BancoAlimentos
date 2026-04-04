@@ -1,18 +1,16 @@
-<!-- src/app/shared/topbar/topbar.component.html -->
+<!-- src/app/shared/topbar/topbar.component.html — CON NOMBRE DE USUARIO DINÁMICO -->
 <header class="topbar">
   <div class="topbar__izquierda">
-    <!-- Botón hamburguesa SOLO visible en móvil -->
     <button class="topbar__menu-btn"
             (click)="toggleSidebar()"
             aria-label="Abrir menú">
       <span class="material-icons">menu</span>
     </button>
-    <!-- Ícono decorativo SOLO visible en escritorio -->
     <span class="material-icons topbar__menu-icono-desktop">menu</span>
     <h2 class="topbar__titulo">{{ titulo }}</h2>
   </div>
   <div class="topbar__derecha">
     <span class="material-icons topbar__usuario-icono">account_circle</span>
-    <span class="topbar__usuario-nombre">Administrador</span>
+    <span class="topbar__usuario-nombre">{{ nombreUsuario }}</span>
   </div>
 </header>

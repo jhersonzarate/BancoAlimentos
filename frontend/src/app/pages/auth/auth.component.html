@@ -1,0 +1,202 @@
+<!-- src/app/pages/auth/auth.component.html -->
+<div class="auth-root">
+
+  <!-- Panel izquierdo: ilustración/branding -->
+  <div class="auth-brand">
+    <div class="auth-brand__inner">
+      <img src="logo-banco.png" alt="Banco de Alimentos Perú" class="auth-brand__logo">
+      <h1 class="auth-brand__titulo">Gestión de<br>Donaciones</h1>
+      <p class="auth-brand__desc">
+        Administra donaciones, organizaciones y distribuciones de alimentos de forma eficiente.
+      </p>
+      <div class="auth-brand__stats">
+        <div class="stat">
+          <span class="stat__num">500+</span>
+          <span class="stat__lab">kg distribuidos</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">5</span>
+          <span class="stat__lab">organizaciones</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">7</span>
+          <span class="stat__lab">entregas</span>
+        </div>
+      </div>
+    </div>
+    <!-- Decoración geométrica -->
+    <div class="auth-brand__deco auth-brand__deco--1"></div>
+    <div class="auth-brand__deco auth-brand__deco--2"></div>
+    <div class="auth-brand__deco auth-brand__deco--3"></div>
+  </div>
+
+  <!-- Panel derecho: formulario -->
+  <div class="auth-panel">
+    <div class="auth-card">
+
+      <!-- Tabs login / registro -->
+      <div class="auth-tabs">
+        <button class="auth-tab" [class.auth-tab--activo]="modo === 'login'"
+                (click)="cambiarModo('login')">
+          Iniciar sesión
+        </button>
+        <button class="auth-tab" [class.auth-tab--activo]="modo === 'register'"
+                (click)="cambiarModo('register')">
+          Registrarse
+        </button>
+        <div class="auth-tab__indicator" [class.auth-tab__indicator--right]="modo === 'register'"></div>
+      </div>
+
+      <!-- ── LOGIN ── -->
+      <form *ngIf="modo === 'login'" [formGroup]="loginForm" (ngSubmit)="iniciarSesion()"
+            class="auth-form" [@fadeSlide]>
+
+        <div class="auth-form__bienvenida">
+          <h2>¡Bienvenido de nuevo!</h2>
+          <p>Ingresa tus credenciales para continuar</p>
+        </div>
+
+        <div class="form-grupo">
+          <label>Correo electrónico</label>
+          <div class="input-icon-wrap">
+            <span class="material-icons input-icon">email</span>
+            <input type="email" formControlName="email"
+                   placeholder="tu@correo.com" autocomplete="email">
+          </div>
+          <span class="error-msg"
+                *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+            Ingresa un email válido
+          </span>
+        </div>
+
+        <div class="form-grupo">
+          <label>Contraseña</label>
+          <div class="input-icon-wrap">
+            <span class="material-icons input-icon">lock</span>
+            <input [type]="verPasswordLogin ? 'text' : 'password'"
+                   formControlName="password"
+                   placeholder="••••••••"
+                   autocomplete="current-password">
+            <button type="button" class="toggle-pass" (click)="verPasswordLogin = !verPasswordLogin"
+                    [attr.aria-label]="verPasswordLogin ? 'Ocultar contraseña' : 'Ver contraseña'">
+              <span class="material-icons">{{ verPasswordLogin ? 'visibility_off' : 'visibility' }}</span>
+            </button>
+          </div>
+          <span class="error-msg"
+                *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+            La contraseña es obligatoria
+          </span>
+        </div>
+
+        <div class="auth-error" *ngIf="errorMsg">
+          <span class="material-icons">error_outline</span>
+          {{ errorMsg }}
+        </div>
+
+        <button type="submit" class="btn-auth"
+                [disabled]="loginForm.invalid || cargando">
+          <span class="material-icons" *ngIf="!cargando">login</span>
+          <span class="spinner" *ngIf="cargando"></span>
+          {{ cargando ? 'Ingresando...' : 'Iniciar sesión' }}
+        </button>
+
+        <p class="auth-switch">
+          ¿No tienes cuenta?
+          <button type="button" class="link-btn" (click)="cambiarModo('register')">
+            Regístrate gratis
+          </button>
+        </p>
+
+      </form>
+
+      <!-- ── REGISTRO ── -->
+      <form *ngIf="modo === 'register'" [formGroup]="registerForm" (ngSubmit)="registrar()"
+            class="auth-form" [@fadeSlide]>
+
+        <div class="auth-form__bienvenida">
+          <h2>Crea tu cuenta</h2>
+          <p>Únete al sistema de gestión de donaciones</p>
+        </div>
+
+        <div class="form-grupo">
+          <label>Nombre completo</label>
+          <div class="input-icon-wrap">
+            <span class="material-icons input-icon">person</span>
+            <input type="text" formControlName="nombre"
+                   placeholder="María García" autocomplete="name">
+          </div>
+          <span class="error-msg"
+                *ngIf="registerForm.get('nombre')?.invalid && registerForm.get('nombre')?.touched">
+            El nombre es obligatorio
+          </span>
+        </div>
+
+        <div class="form-grupo">
+          <label>Correo electrónico</label>
+          <div class="input-icon-wrap">
+            <span class="material-icons input-icon">email</span>
+            <input type="email" formControlName="email"
+                   placeholder="tu@correo.com" autocomplete="email">
+          </div>
+          <span class="error-msg"
+                *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+            Ingresa un email válido
+          </span>
+        </div>
+
+        <div class="form-grupo">
+          <label>Contraseña</label>
+          <div class="input-icon-wrap">
+            <span class="material-icons input-icon">lock</span>
+            <input [type]="verPasswordReg ? 'text' : 'password'"
+                   formControlName="password"
+                   placeholder="Mínimo 8 caracteres"
+                   autocomplete="new-password">
+            <button type="button" class="toggle-pass" (click)="verPasswordReg = !verPasswordReg"
+                    [attr.aria-label]="verPasswordReg ? 'Ocultar contraseña' : 'Ver contraseña'">
+              <span class="material-icons">{{ verPasswordReg ? 'visibility_off' : 'visibility' }}</span>
+            </button>
+          </div>
+          <span class="error-msg"
+                *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched">
+            Mínimo 8 caracteres
+          </span>
+          <!-- Indicador de fortaleza -->
+          <div class="pass-strength" *ngIf="registerForm.get('password')?.value">
+            <div class="pass-strength__bar">
+              <div class="pass-strength__fill"
+                   [style.width.%]="fortalezaPassword"
+                   [class.debil]="fortalezaPassword < 40"
+                   [class.media]="fortalezaPassword >= 40 && fortalezaPassword < 75"
+                   [class.fuerte]="fortalezaPassword >= 75">
+              </div>
+            </div>
+            <span class="pass-strength__label">{{ etiquetaFortaleza }}</span>
+          </div>
+        </div>
+
+        <div class="auth-error" *ngIf="errorMsg">
+          <span class="material-icons">error_outline</span>
+          {{ errorMsg }}
+        </div>
+
+        <button type="submit" class="btn-auth"
+                [disabled]="registerForm.invalid || cargando">
+          <span class="material-icons" *ngIf="!cargando">person_add</span>
+          <span class="spinner" *ngIf="cargando"></span>
+          {{ cargando ? 'Registrando...' : 'Crear cuenta' }}
+        </button>
+
+        <p class="auth-switch">
+          ¿Ya tienes cuenta?
+          <button type="button" class="link-btn" (click)="cambiarModo('login')">
+            Inicia sesión
+          </button>
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>
