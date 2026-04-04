@@ -13,10 +13,14 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")
-        .allowedOrigins("https://bancoalimentos.vercel.app")
-        .allowedMethods("*")
-        .allowedHeaders("*");
+
+                registry.addMapping("/**")
+                        .allowedOrigins(
+                            "https://banco-alimentos-mcrn.vercel.app", // ✅ SIN /
+                            "http://localhost:4200" // ✅ para pruebas
+                        )
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                        .allowedHeaders("*");
             }
         };
     }
