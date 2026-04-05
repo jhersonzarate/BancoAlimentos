@@ -5,7 +5,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.bancoalimentos.backend.dto.AuthDTO;
-import com.bancoalimentos.backend.exception.ResourceNotFoundException;
 import com.bancoalimentos.backend.model.Usuario;
 import com.bancoalimentos.backend.repository.UsuarioRepository;
 

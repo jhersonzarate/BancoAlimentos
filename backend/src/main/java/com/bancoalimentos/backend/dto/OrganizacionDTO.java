@@ -2,8 +2,6 @@ package com.bancoalimentos.backend.dto;
 
 import jakarta.validation.constraints.*;
 import lombok.*;
-import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 // ===============================================================

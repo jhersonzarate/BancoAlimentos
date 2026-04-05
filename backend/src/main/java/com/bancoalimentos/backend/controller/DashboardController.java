@@ -30,7 +30,7 @@ public class DashboardController {
         data.put("donacionesDistribuidas",donacionRepository.countByEstado("DISTRIBUIDO"));
 
         data.put("totalOrganizaciones",   organizacionRepository.count());
-        data.put("organizacionesActivas", organizacionRepository.findByActivoTrueOrderByNombreAsc().size());
+        data.put("organizacionesActivas", organizacionRepository.findByActivoTrueOrderByIdAsc().size());
 
         data.put("totalDistribuciones",   distribucionRepository.count());
         data.put("distribucionesPendientes", distribucionRepository.countByEstado("PENDIENTE"));
