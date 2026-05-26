@@ -103,3 +103,6 @@ application-prod.properties
 .DS_Store
 Thumbs.db
 ```
+
+.metals/
+.bloop/
