@@ -66,3 +66,486 @@ WARNING: Unmatched cancel notification for request id 25
 2026.05.26 13:31:09 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\WebConfig.java. Using fallback presentation compiler.
 2026.05.26 13:31:09 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\WebConfig.java. Using fallback presentation compiler.
 2026.05.26 13:31:09 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\WebConfig.java. Using fallback presentation compiler.
+2026.05.26 13:41:27 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:41:27 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:41:27 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:41:27 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:41:28 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:41:28 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java
+2026.05.26 13:41:28 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:41:28 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtUtil.java. Output:
+
+2026.05.26 13:41:34 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:41:34 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:41:34 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:41:34 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:41:35 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java
+2026.05.26 13:41:35 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:41:35 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtAuthFilter.java. Output:
+
+2026.05.26 13:41:43 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:41:44 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:41:44 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:41:44 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:41:45 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java
+2026.05.26 13:41:44 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:41:45 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/AuthService.java. Output:
+
+2026.05.26 13:41:55 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:41:56 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:41:56 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:41:56 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:41:56 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java
+2026.05.26 13:41:56 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:41:56 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/AuthController.java. Output:
+
+2026.05.26 13:41:57 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\WebConfig.java. Using fallback presentation compiler.
+2026.05.26 13:41:57 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\WebConfig.java. Using fallback presentation compiler.
+2026.05.26 13:42:32 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:42:32 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java
+2026.05.26 13:42:32 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:42:32 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:42:32 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:42:34 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:42:34 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:42:35 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java
+2026.05.26 13:42:35 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:42:34 INFO  Created report: Optional[file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtAuthFilter.java]
+2026.05.26 13:42:34 INFO  QDox parse error in file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtAuthFilter.java (full report at: "C:\Users\Jherson Silva\BancoAlimentos\.metals\.reports\metals-full\2026-05-26\r_qdox-error_13-42-35-695.md")
+2026.05.26 13:42:35 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtAuthFilter.java. Output:
+
+2026.05.26 13:42:36 INFO  Report absolute-path: ### java.nio.file.NoSuchFileException: c:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java
+
+Uri: file:///c%3A/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtAuthFilter.java
+
+
+#### Error stacktrace:
+
+```
+java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:96)
+	java.base/sun.nio.fs.WindowsLinkSupport.getRealPath(WindowsLinkSupport.java:288)
+	java.base/sun.nio.fs.WindowsPath.toRealPath(WindowsPath.java:947)
+	java.base/sun.nio.fs.WindowsPath.toRealPath(WindowsPath.java:42)
+	scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.dealias(ScalametaCommonEnrichments.scala:408)
+	scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:151)
+	scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePathSafe(MetalsEnrichments.scala:768)
+	scala.meta.internal.metals.WorkspaceLspService.getServiceForOpt(WorkspaceLspService.scala:358)
+	scala.meta.internal.metals.WorkspaceLspService.getServiceFor(WorkspaceLspService.scala:367)
+	scala.meta.internal.metals.WorkspaceLspService.codeLens(WorkspaceLspService.scala:640)
+	scala.meta.metals.lsp.DelegatingScalaService.codeLens(DelegatingScalaService.scala:165)
+	java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:265)
+	org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:195)
+	org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	java.base/java.lang.Thread.run(Thread.java:1583)
+```
+
+2026.05.26 13:42:37 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.05.26 13:42:36 INFO  no build target found for c:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:42:36 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\WebConfig.java. Using fallback presentation compiler.
+2026.05.26 13:42:37 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\WebConfig.java
+2026.05.26 13:42:37 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\WebConfig.java. Using fallback presentation compiler.
+2026.05.26 13:42:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:42:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:42:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:42:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:42:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:42:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:42:42 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:42:46 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:42:46 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java
+2026.05.26 13:42:46 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:42:47 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:42:46 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:42:46 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:42:47 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:42:48 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java
+2026.05.26 13:42:48 INFO  Created report: Optional[file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtUtil.java]
+2026.05.26 13:42:48 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:42:48 INFO  QDox parse error in file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtUtil.java (full report at: "C:\Users\Jherson Silva\BancoAlimentos\.metals\.reports\metals-full\2026-05-26\r_qdox-error_13-42-48-278.md")
+2026.05.26 13:42:48 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtUtil.java. Output:
+
+2026.05.26 13:42:51 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:42:51 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java
+2026.05.26 13:42:51 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:42:51 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:42:51 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:42:52 INFO  no build target found for c:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:42:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:42:53 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java
+2026.05.26 13:42:53 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:42:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:42:54 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:42:54 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java
+2026.05.26 13:42:54 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:42:54 INFO  Created report: Optional[file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/AuthController.java]
+2026.05.26 13:42:54 INFO  QDox parse error in file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/AuthController.java (full report at: "C:\Users\Jherson Silva\BancoAlimentos\.metals\.reports\metals-full\2026-05-26\r_qdox-error_13-42-54-943.md")
+2026.05.26 13:42:55 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/AuthController.java. Output:
+
+2026.05.26 13:42:57 INFO  no build target found for c:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:42:57 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:42:57 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java
+2026.05.26 13:42:57 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:42:57 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:42:57 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:42:58 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:42:58 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:42:59 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java
+2026.05.26 13:42:58 INFO  Created report: Optional[file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/AuthService.java]
+2026.05.26 13:42:58 INFO  QDox parse error in file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/AuthService.java (full report at: "C:\Users\Jherson Silva\BancoAlimentos\.metals\.reports\metals-full\2026-05-26\r_qdox-error_13-42-59-643.md")
+2026.05.26 13:42:59 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:42:59 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/AuthService.java. Output:
+
+2026.05.26 13:43:00 INFO  no build target found for c:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:43:00 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:43:00 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java
+2026.05.26 13:43:00 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:43:00 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:43:00 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:43:12 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:12 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:12 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:12 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:13 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:13 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java
+2026.05.26 13:43:13 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:13 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtUtil.java. Output:
+
+2026.05.26 13:43:18 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:18 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:18 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:18 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:19 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java
+2026.05.26 13:43:18 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:19 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtAuthFilter.java. Output:
+
+2026.05.26 13:43:25 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:25 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java
+2026.05.26 13:43:25 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:25 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:25 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:25 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:25 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:26 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:26 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:26 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:26 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:26 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:27 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:28 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java
+2026.05.26 13:43:28 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:28 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtUtil.java. Output:
+
+2026.05.26 13:43:45 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:45 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:43:45 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:46 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java
+2026.05.26 13:43:45 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:46 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:45 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:53 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:53 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:53 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:53 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:53 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:54 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:55 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:55 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java
+2026.05.26 13:43:55 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:55 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:43:55 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/JwtAuthFilter.java. Output:
+
+2026.05.26 13:43:56 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:44:08 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:08 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java
+2026.05.26 13:44:08 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:08 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:08 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:08 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:08 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:09 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:09 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:09 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:10 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:09 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:10 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java
+2026.05.26 13:44:10 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:10 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/config/SecurityConfig.java. Output:
+
+2026.05.26 13:44:11 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:11 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:44:24 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:24 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:24 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:28 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:28 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:28 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:29 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:29 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:29 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:29 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:29 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:30 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java
+2026.05.26 13:44:30 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:30 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/AuthService.java. Output:
+
+2026.05.26 13:44:31 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:44:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+may 26, 2026 1:44:38 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 428
+2026.05.26 13:44:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:44:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:44:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:44:38 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/controller/AuthController.java. Output:
+
+2026.05.26 13:44:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:44:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:44:38 INFO  Created report: Optional[file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/controller/AuthController.java]
+2026.05.26 13:44:38 INFO  empty definition using pc, found symbol in pc: _empty_/HttpStatus# (full report at: "C:\Users\Jherson Silva\BancoAlimentos\.metals\.reports\metals-full\2026-05-26\r_empty-definition_13-44-39-543.md")
+2026.05.26 13:44:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:44:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:44:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:44:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:44:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:44:41 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java
+2026.05.26 13:44:41 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:44:40 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/controller/AuthController.java. Output:
+
+2026.05.26 13:44:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\DonacionService.java. Using fallback presentation compiler.
+2026.05.26 13:44:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\DonacionService.java. Using fallback presentation compiler.
+2026.05.26 13:44:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\DonacionService.java. Using fallback presentation compiler.
+2026.05.26 13:44:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\DonacionService.java. Using fallback presentation compiler.
+2026.05.26 13:44:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\DonacionService.java. Using fallback presentation compiler.
+2026.05.26 13:44:57 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\OrganizacionService.java. Using fallback presentation compiler.
+2026.05.26 13:44:57 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\OrganizacionService.java. Using fallback presentation compiler.
+2026.05.26 13:44:57 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\WebConfig.java. Using fallback presentation compiler.
+2026.05.26 13:45:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\SecurityConfig.java. Using fallback presentation compiler.
+2026.05.26 13:46:12 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtUtil.java. Using fallback presentation compiler.
+2026.05.26 13:46:17 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\config\JwtAuthFilter.java. Using fallback presentation compiler.
+2026.05.26 13:47:02 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:03 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:03 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:03 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:03 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:04 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java
+2026.05.26 13:47:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:04 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/dto/UsuarioDTO.java. Output:
+
+2026.05.26 13:47:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:05 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java
+2026.05.26 13:47:05 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:05 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/dto/UsuarioDTO.java. Output:
+
+2026.05.26 13:47:11 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:13 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:47:24 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\AuthService.java. Using fallback presentation compiler.
+2026.05.26 13:47:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\AuthController.java. Using fallback presentation compiler.
+2026.05.26 13:47:44 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:47:44 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:47:44 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:47:44 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:47:51 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:47:51 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:47:51 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\DonacionService.java. Using fallback presentation compiler.
+2026.05.26 13:47:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:47:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:47:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:47:53 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:47:53 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java
+2026.05.26 13:47:53 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:47:53 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/repository/UsuarioRepository.java. Output:
+
+2026.05.26 13:47:57 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\OrganizacionService.java. Using fallback presentation compiler.
+2026.05.26 13:50:02 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:50:24 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:25 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:25 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:25 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:25 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:26 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java
+2026.05.26 13:50:26 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:26 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/UsuarioService.java. Output:
+
+2026.05.26 13:50:31 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:31 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:31 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:31 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:31 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:32 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:32 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:33 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java
+2026.05.26 13:50:33 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:33 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/UsuarioService.java. Output:
+
+2026.05.26 13:50:34 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:50:44 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:50:46 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:47 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:47 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:47 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:47 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:48 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java
+2026.05.26 13:50:48 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:48 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/controller/UsuarioController.java. Output:
+
+2026.05.26 13:50:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:52 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:53 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:54 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java
+2026.05.26 13:50:54 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:50:53 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/controller/UsuarioController.java. Output:
+
+2026.05.26 13:50:56 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:51:05 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+may 26, 2026 1:51:05 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 619
+2026.05.26 13:51:36 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:36 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:36 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:36 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:36 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:37 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java
+2026.05.26 13:51:37 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:37 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/model/Inventario.java. Output:
+
+2026.05.26 13:51:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:38 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:39 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:40 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java
+2026.05.26 13:51:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:51:40 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/model/Inventario.java. Output:
+
+2026.05.26 13:51:44 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:52:03 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:05 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java
+2026.05.26 13:52:05 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:04 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/repository/InventarioRepository.java. Output:
+
+2026.05.26 13:52:39 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:39 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:39 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:39 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:39 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:39 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:40 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java
+2026.05.26 13:52:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:52:40 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/repository/InventarioRepository.java. Output:
+
+2026.05.26 13:52:55 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:52:55 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:52:55 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:52:55 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:52:55 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:52:56 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java
+2026.05.26 13:52:56 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:52:56 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/dto/InventarioDTO.java. Output:
+
+2026.05.26 13:53:07 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:53:07 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:53:07 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:53:07 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:53:07 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:53:07 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:53:08 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java
+2026.05.26 13:53:08 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:53:07 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/dto/InventarioDTO.java. Output:
+
+2026.05.26 13:53:11 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:53:24 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\UsuarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:32 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:32 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:32 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:32 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:33 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:33 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java
+2026.05.26 13:53:33 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:33 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/InventarioService.java. Output:
+
+2026.05.26 13:53:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:40 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:41 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:42 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:42 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java
+2026.05.26 13:53:42 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:42 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/InventarioService.java. Output:
+
+2026.05.26 13:53:43 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:46 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.05.26 13:53:46 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:53:58 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:53:59 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:53:59 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:53:59 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:53:59 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:00 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java
+2026.05.26 13:54:00 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:53:59 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/controller/InventarioController.java. Output:
+
+2026.05.26 13:54:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:04 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:05 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:06 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:06 WARN  no build target for: C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java
+2026.05.26 13:54:05 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:06 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/controller/InventarioController.java. Output:
+
+2026.05.26 13:54:06 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:07 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:11 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:12 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 13:54:36 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\model\Inventario.java. Using fallback presentation compiler.
+2026.05.26 13:55:03 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\repository\InventarioRepository.java. Using fallback presentation compiler.
+2026.05.26 13:55:54 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\dto\InventarioDTO.java. Using fallback presentation compiler.
+2026.05.26 13:56:32 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\service\InventarioService.java. Using fallback presentation compiler.
+2026.05.26 13:56:58 INFO  no build target found for C:\Users\Jherson Silva\BancoAlimentos\backend\src\main\java\com\bancoalimentos\backend\controller\InventarioController.java. Using fallback presentation compiler.
+2026.05.26 14:03:27 INFO  Shutting down server
+2026.05.26 14:03:27 INFO  Memory monitor stopped
+2026.05.26 14:03:27 INFO  shutting down Metals
+2026.05.26 14:03:27 INFO  Exiting server
+2026.05.26 14:03:27 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:214)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+

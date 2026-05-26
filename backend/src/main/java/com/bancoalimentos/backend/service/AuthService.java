@@ -4,21 +4,30 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import com.bancoalimentos.backend.config.JwtUtil;
 import com.bancoalimentos.backend.dto.AuthDTO;
 import com.bancoalimentos.backend.model.Usuario;
 import com.bancoalimentos.backend.repository.UsuarioRepository;
 
-import java.util.UUID;
-
+/**
+ * Servicio de autenticación.
+ * Registra nuevos usuarios y valida credenciales en el login.
+ * Genera JWT real con HMAC-SHA256 a través de JwtUtil.
+ */
 @Service
 @RequiredArgsConstructor
 public class AuthService {
 
     private final UsuarioRepository usuarioRepository;
+    private final JwtUtil           jwtUtil;
+
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+
+    // ── Registro ──────────────────────────────────────────────────────────
 
     @Transactional
     public AuthDTO.AuthResponse registrar(AuthDTO.RegisterRequest request) {
+
         if (usuarioRepository.existsByEmail(request.getEmail())) {
             throw new IllegalArgumentException("Ya existe una cuenta con ese email");
         }
@@ -33,23 +42,18 @@ public class AuthService {
 
         usuario = usuarioRepository.save(usuario);
 
-        // Token simple (en producción usar JWT real)
-        String token = UUID.randomUUID().toString().replace("-", "") +
-                       UUID.randomUUID().toString().replace("-", "");
+        String token = jwtUtil.generarToken(usuario.getEmail(), usuario.getRol());
 
-        return AuthDTO.AuthResponse.builder()
-                .id(usuario.getId())
-                .nombre(usuario.getNombre())
-                .email(usuario.getEmail())
-                .rol(usuario.getRol())
-                .token(token)
-                .createdAt(usuario.getCreatedAt())
-                .build();
+        return buildResponse(usuario, token);
     }
+
+    // ── Login ─────────────────────────────────────────────────────────────
 
     @Transactional(readOnly = true)
     public AuthDTO.AuthResponse login(AuthDTO.LoginRequest request) {
-        Usuario usuario = usuarioRepository.findByEmail(request.getEmail().toLowerCase().trim())
+
+        Usuario usuario = usuarioRepository
+                .findByEmail(request.getEmail().toLowerCase().trim())
                 .orElseThrow(() -> new IllegalArgumentException("Credenciales incorrectas"));
 
         if (!usuario.getActivo()) {
@@ -60,9 +64,14 @@ public class AuthService {
             throw new IllegalArgumentException("Credenciales incorrectas");
         }
 
-        String token = UUID.randomUUID().toString().replace("-", "") +
-                       UUID.randomUUID().toString().replace("-", "");
+        String token = jwtUtil.generarToken(usuario.getEmail(), usuario.getRol());
 
+        return buildResponse(usuario, token);
+    }
+
+    // ── Mapeo interno ─────────────────────────────────────────────────────
+
+    private AuthDTO.AuthResponse buildResponse(Usuario usuario, String token) {
         return AuthDTO.AuthResponse.builder()
                 .id(usuario.getId())
                 .nombre(usuario.getNombre())
