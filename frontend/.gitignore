@@ -1,42 +1,105 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+```gitignore id="e7uk0u"
+# =========================
+# ANGULAR FRONTEND
+# =========================
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
-
-# Node
+# Dependencies
 /node_modules
-npm-debug.log
-yarn-error.log
 
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Angular build
+/dist
+/.angular
+/.angular/cache
+/out-tsc
 
-# Visual Studio Code
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment files
+src/environments/environment*.ts
+
+# Coverage
+/coverage
+
+# IDEs
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+.idea/
+*.iml
+.project
+.classpath
+.settings/
 
-# System files
+# OS files
 .DS_Store
 Thumbs.db
+
+# =========================
+# SPRING BOOT BACKEND
+# =========================
+
+# Maven
+/target/
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+/build/
+.gradle/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot logs
+*.log
+logs/
+
+# Application secrets
+application-local.properties
+application-prod.properties
+.env
+
+# Database
+*.db
+*.mv.db
+*.trace.db
+
+# Metals / Scala
+.metals/
+.bloop/
+
+# IntelliJ
+.idea/
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Eclipse
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
+```
