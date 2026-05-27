@@ -17,17 +17,17 @@ import { AuthService } from '../../services/auth.service';
   templateUrl: './auth.component.html',
   styleUrl: './auth.component.scss',
   animations: [
-    trigger('fadeSlide', [
-      transition(':enter', [
-        style({ opacity: 0, transform: 'translateY(12px)' }),
-        animate('220ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
-      ]),
-      transition(':leave', [
-        animate('150ms ease-in', style({ opacity: 0, transform: 'translateY(-8px)' }))
-      ])
-    ])
-  ]
-})
+        trigger('fadeSlide', [
+          transition(':enter', [
+            style({ opacity: 0 }),  // ← quita el translateY
+            animate('220ms ease-out', style({ opacity: 1 }))
+          ]),
+          transition(':leave', [animate('150ms ease-in', style({ opacity: 0 }))
+
+          ])
+        ])
+      ]
+    })
 export class AuthComponent implements OnInit {
   modo: 'login' | 'register' = 'login';
 
