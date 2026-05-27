@@ -137,14 +137,12 @@
   padding: 40px 36px;
   width: 100%;
   max-width: 420px;
-  min-height: 520px; // ← agrega esto
-  display: flex;      // ← agrega esto
-  flex-direction: column; // ← agrega esto
+  min-height: 580px;
 
   @media (max-width: 480px) {
     padding: 28px 20px;
     border-radius: 16px;
-    min-height: 480px; // ← agrega esto
+    min-height: 560px;
   }
 }
 

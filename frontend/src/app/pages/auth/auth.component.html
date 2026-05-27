@@ -48,8 +48,9 @@
       </div>
 
       <!-- ── LOGIN ── -->
-      <form *ngIf="modo === 'login'" [formGroup]="loginForm" (ngSubmit)="iniciarSesion()"
-            class="auth-form" [@fadeSlide]>
+      <form [formGroup]="loginForm" (ngSubmit)="iniciarSesion()"
+      class="auth-form"
+      [hidden]="modo !== 'login'">
 
         <div class="auth-form__bienvenida">
           <h2>¡Bienvenido de nuevo!</h2>
@@ -110,8 +111,9 @@
       </form>
 
       <!-- ── REGISTRO ── -->
-      <form *ngIf="modo === 'register'" [formGroup]="registerForm" (ngSubmit)="registrar()"
-            class="auth-form" [@fadeSlide]>
+      <form [formGroup]="registerForm" (ngSubmit)="registrar()"
+      class="auth-form"
+      [hidden]="modo !== 'register'">
 
         <div class="auth-form__bienvenida">
           <h2>Crea tu cuenta</h2>
