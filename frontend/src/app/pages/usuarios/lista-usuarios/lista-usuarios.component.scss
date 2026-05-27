@@ -1,0 +1,16 @@
+// src/app/pages/usuarios/lista-usuarios/lista-usuarios.component.scss
+@use '../../../../styles/variables' as *;
+
+.acciones {
+  display: flex;
+  gap: 6px;
+}
+
+@media (max-width: 600px) {
+  .tabla {
+    .col-email,
+    .col-fecha {
+      display: none;
+    }
+  }
+}

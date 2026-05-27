@@ -1,0 +1,82 @@
+<!-- src/app/pages/usuarios/lista-usuarios/lista-usuarios.component.html -->
+<app-topbar titulo="Gestión de Usuarios"></app-topbar>
+
+<div class="page-body">
+  <div class="page-header">
+    <div>
+      <h1>Gestión de Usuarios</h1>
+      <p>Administración de cuentas del sistema</p>
+    </div>
+  </div>
+
+  <!-- Cargando -->
+  <div class="estado-vacio" *ngIf="cargando">
+    <span class="material-icons icono">hourglass_empty</span>
+    <p>Cargando usuarios...</p>
+  </div>
+
+  <!-- Tabla -->
+  <div class="tabla-contenedor" *ngIf="!cargando">
+    <table class="tabla" *ngIf="usuarios.length > 0; else sinDatos">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th class="col-email">Email</th>
+          <th>Rol</th>
+          <th>Estado</th>
+          <th class="col-fecha">Registro</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let u of usuarios">
+          <td class="texto-gris">{{ u.id }}</td>
+          <td class="negrita">{{ u.nombre }}</td>
+          <td class="col-email texto-gris">{{ u.email }}</td>
+          <td>
+            <span class="badge" [ngClass]="badgeRol(u.rol)">
+              {{ u.rol }}
+            </span>
+          </td>
+          <td>
+            <span class="badge" [ngClass]="badgeEstado(u.activo)">
+              {{ u.activo ? 'Activo' : 'Inactivo' }}
+            </span>
+          </td>
+          <td class="col-fecha texto-gris">
+            {{ u.createdAt | date:'dd/MM/yyyy' }}
+          </td>
+          <td>
+            <div class="acciones">
+              <!-- Editar -->
+              <button class="btn btn--icono" title="Editar usuario"
+                      [routerLink]="['/usuarios/editar', u.id]">
+                <span class="material-icons">edit</span>
+              </button>
+              <!-- Activar -->
+              <button class="btn btn--icono btn--primario" title="Activar cuenta"
+                      *ngIf="!u.activo"
+                      (click)="activar(u.id!)">
+                <span class="material-icons">check_circle</span>
+              </button>
+              <!-- Desactivar -->
+              <button class="btn btn--peligro btn--icono" title="Desactivar cuenta"
+                      *ngIf="u.activo"
+                      (click)="desactivar(u.id!)">
+                <span class="material-icons">block</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #sinDatos>
+      <div class="estado-vacio">
+        <span class="material-icons icono">group</span>
+        <p>No hay usuarios registrados</p>
+      </div>
+    </ng-template>
+  </div>
+</div>

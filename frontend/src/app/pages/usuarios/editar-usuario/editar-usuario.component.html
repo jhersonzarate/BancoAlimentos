@@ -1,0 +1,77 @@
+<!-- src/app/pages/usuarios/editar-usuario/editar-usuario.component.html -->
+<app-topbar titulo="Editar Usuario"></app-topbar>
+
+<div class="page-body">
+  <div class="page-header">
+    <div>
+      <h1>Editar usuario</h1>
+      <p>Modificar datos, rol y estado de la cuenta</p>
+    </div>
+    <button class="btn btn--secundario" routerLink="/usuarios">
+      <span class="material-icons">arrow_back</span>
+      Volver
+    </button>
+  </div>
+
+  <!-- Cargando -->
+  <div class="estado-vacio" *ngIf="cargando">
+    <span class="material-icons icono">hourglass_empty</span>
+    <p>Cargando datos...</p>
+  </div>
+
+  <div class="card formulario-card" *ngIf="!cargando">
+    <form [formGroup]="form" (ngSubmit)="guardar()">
+
+      <div class="form-fila">
+        <div class="form-grupo">
+          <label>Nombre completo *</label>
+          <input type="text" formControlName="nombre" placeholder="Nombres y apellidos">
+          <span class="error-msg"
+                *ngIf="form.get('nombre')?.invalid && form.get('nombre')?.touched">
+            El nombre es obligatorio
+          </span>
+        </div>
+
+        <div class="form-grupo">
+          <label>Correo electrónico *</label>
+          <input type="email" formControlName="email" placeholder="correo@ejemplo.com">
+          <span class="error-msg"
+                *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+            Ingresa un email válido
+          </span>
+        </div>
+      </div>
+
+      <div class="form-fila">
+        <div class="form-grupo">
+          <label>Rol del sistema *</label>
+          <select formControlName="rol">
+            <option value="USUARIO">USUARIO</option>
+            <option value="ADMIN">ADMIN</option>
+          </select>
+        </div>
+
+        <div class="form-grupo">
+          <label>Estado de la cuenta *</label>
+          <select formControlName="activo">
+            <option [ngValue]="true">Activo</option>
+            <option [ngValue]="false">Inactivo</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="formulario-acciones">
+        <button type="button" class="btn btn--secundario" routerLink="/usuarios">
+          <span class="material-icons">close</span>
+          Cancelar
+        </button>
+        <button type="submit" class="btn btn--primario"
+                [disabled]="form.invalid || guardando">
+          <span class="material-icons">save</span>
+          {{ guardando ? 'Guardando...' : 'Guardar cambios' }}
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>

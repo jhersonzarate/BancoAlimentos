@@ -1,25 +1,29 @@
-// src/app/app.routes.ts — VERSIÓN CON AUTH GUARD
+// src/app/app.routes.ts
 import { Routes } from '@angular/router';
-import { authGuard } from './guards/auth.guard';
+import { authGuard }  from './guards/auth.guard';
+import { adminGuard } from './guards/admin.guard';
 
 export const routes: Routes = [
-  // Ruta pública de login/registro
+
+  // ── Pública ───────────────────────────────────────────────────────────
   {
     path: 'login',
     loadComponent: () =>
       import('./pages/auth/auth.component').then(m => m.AuthComponent)
   },
 
-  // Redirigir raíz a dashboard (protegido)
+  // Redirección raíz
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
 
-  // ── Rutas protegidas ──
+  // ── Rutas autenticadas ────────────────────────────────────────────────
   {
     path: 'dashboard',
     canActivate: [authGuard],
     loadComponent: () =>
       import('./pages/dashboard/dashboard.component').then(m => m.DashboardComponent)
   },
+
+  // Donaciones
   {
     path: 'donaciones',
     canActivate: [authGuard],
@@ -41,6 +45,8 @@ export const routes: Routes = [
       import('./pages/donaciones/formulario-donacion/formulario-donacion.component')
         .then(m => m.FormularioDonacionComponent)
   },
+
+  // Organizaciones
   {
     path: 'organizaciones',
     canActivate: [authGuard],
@@ -62,6 +68,8 @@ export const routes: Routes = [
       import('./pages/organizaciones/formulario-organizacion/formulario-organizacion.component')
         .then(m => m.FormularioOrganizacionComponent)
   },
+
+  // Distribuciones
   {
     path: 'distribuciones',
     canActivate: [authGuard],
@@ -77,5 +85,45 @@ export const routes: Routes = [
         .then(m => m.FormularioDistribucionComponent)
   },
 
+  // Inventario (todos los usuarios autenticados)
+  {
+    path: 'inventario',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./pages/inventario/lista-inventario/lista-inventario.component')
+        .then(m => m.ListaInventarioComponent)
+  },
+  {
+    path: 'inventario/nuevo',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./pages/inventario/formulario-inventario/formulario-inventario.component')
+        .then(m => m.FormularioInventarioComponent)
+  },
+  {
+    path: 'inventario/editar/:id',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./pages/inventario/formulario-inventario/formulario-inventario.component')
+        .then(m => m.FormularioInventarioComponent)
+  },
+
+  // Gestión de Usuarios (solo ADMIN)
+  {
+    path: 'usuarios',
+    canActivate: [adminGuard],
+    loadComponent: () =>
+      import('./pages/usuarios/lista-usuarios/lista-usuarios.component')
+        .then(m => m.ListaUsuariosComponent)
+  },
+  {
+    path: 'usuarios/editar/:id',
+    canActivate: [adminGuard],
+    loadComponent: () =>
+      import('./pages/usuarios/editar-usuario/editar-usuario.component')
+        .then(m => m.EditarUsuarioComponent)
+  },
+
+  // Fallback
   { path: '**', redirectTo: 'dashboard' }
 ];

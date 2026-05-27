@@ -1,0 +1,81 @@
+<!-- src/app/pages/inventario/lista-inventario/lista-inventario.component.html -->
+<app-topbar titulo="Inventario"></app-topbar>
+
+<div class="page-body">
+  <div class="page-header">
+    <div>
+      <h1>Inventario de alimentos</h1>
+      <p>Stock disponible por tipo de alimento en el banco</p>
+    </div>
+    <button class="btn btn--primario" routerLink="/inventario/nuevo">
+      <span class="material-icons">add</span>
+      Nuevo ítem
+    </button>
+  </div>
+
+  <!-- Cargando -->
+  <div class="estado-vacio" *ngIf="cargando">
+    <span class="material-icons icono">hourglass_empty</span>
+    <p>Cargando inventario...</p>
+  </div>
+
+  <!-- Tabla -->
+  <div class="tabla-contenedor" *ngIf="!cargando">
+    <table class="tabla" *ngIf="inventario.length > 0; else sinDatos">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tipo de alimento</th>
+          <th>Stock disponible</th>
+          <th>Unidad</th>
+          <th class="col-minimo">Stock mínimo</th>
+          <th class="col-desc">Descripción</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of inventario"
+            [class.fila-alerta]="item.bajoStock">
+          <td class="texto-gris">{{ item.id }}</td>
+          <td class="negrita">{{ item.tipoAlimento }}</td>
+          <td>
+            <span [class.texto-naranja]="item.bajoStock"
+                  [class.negrita]="item.bajoStock">
+              {{ item.stockDisponible }}
+            </span>
+          </td>
+          <td>{{ item.unidad }}</td>
+          <td class="col-minimo">{{ item.stockMinimo ?? '—' }}</td>
+          <td class="col-desc texto-gris">{{ item.descripcion || '—' }}</td>
+          <td>
+            <span class="badge"
+                  [class.badge--distribuido]="!item.bajoStock"
+                  [class.badge--cancelado]="item.bajoStock">
+              {{ item.bajoStock ? 'Bajo stock' : 'Normal' }}
+            </span>
+          </td>
+          <td>
+            <div class="acciones">
+              <button class="btn btn--icono" title="Editar"
+                      [routerLink]="['/inventario/editar', item.id]">
+                <span class="material-icons">edit</span>
+              </button>
+              <button class="btn btn--peligro btn--icono" title="Eliminar"
+                      (click)="eliminar(item.id!)">
+                <span class="material-icons">delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #sinDatos>
+      <div class="estado-vacio">
+        <span class="material-icons icono">inventory_2</span>
+        <p>No hay ítems en el inventario</p>
+      </div>
+    </ng-template>
+  </div>
+</div>

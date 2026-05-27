@@ -1,0 +1,25 @@
+// src/app/pages/inventario/lista-inventario/lista-inventario.component.scss
+@use '../../../../styles/variables' as *;
+
+.acciones {
+  display: flex;
+  gap: 6px;
+}
+
+// Resalta la fila entera cuando hay bajo stock
+.fila-alerta {
+  background: #FFF8E1 !important;
+
+  &:hover {
+    background: #FFF3CD !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabla {
+    .col-minimo,
+    .col-desc {
+      display: none;
+    }
+  }
+}

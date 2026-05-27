@@ -1,4 +1,6 @@
-// src/app/models/donacion.model.ts
+// src/app/models/index.ts
+
+// ── Donación ──────────────────────────────────────────────────────────────
 export interface Donacion {
   id?: number;
   donante: string;
@@ -12,7 +14,7 @@ export interface Donacion {
   createdAt?: string;
 }
 
-// src/app/models/organizacion.model.ts
+// ── Organización ──────────────────────────────────────────────────────────
 export interface Organizacion {
   id?: number;
   nombre: string;
@@ -25,7 +27,7 @@ export interface Organizacion {
   createdAt?: string;
 }
 
-// src/app/models/distribucion.model.ts
+// ── Distribución ──────────────────────────────────────────────────────────
 export interface Distribucion {
   id?: number;
   donacionId: number;
@@ -41,7 +43,7 @@ export interface Distribucion {
   createdAt?: string;
 }
 
-// src/app/models/dashboard.model.ts
+// ── Dashboard ─────────────────────────────────────────────────────────────
 export interface DashboardResumen {
   totalDonaciones: number;
   donacionesPendientes: number;
@@ -52,4 +54,34 @@ export interface DashboardResumen {
   totalDistribuciones: number;
   distribucionesPendientes: number;
   distribucionesEntregadas: number;
+}
+
+// ── Usuario ───────────────────────────────────────────────────────────────
+export interface Usuario {
+  id?: number;
+  nombre: string;
+  email: string;
+  rol: 'USUARIO' | 'ADMIN';
+  activo?: boolean;
+  createdAt?: string;
+}
+
+export interface UsuarioActualizarRequest {
+  nombre: string;
+  email: string;
+  rol: 'USUARIO' | 'ADMIN';
+  activo: boolean;
+}
+
+// ── Inventario ────────────────────────────────────────────────────────────
+export interface Inventario {
+  id?: number;
+  tipoAlimento: string;
+  stockDisponible: number;
+  unidad: string;
+  descripcion?: string;
+  stockMinimo?: number;
+  bajoStock?: boolean;
+  createdAt?: string;
+  updatedAt?: string;
 }

@@ -1,4 +1,4 @@
-<!-- src/app/shared/sidebar/sidebar.component.html — CON LOGOUT -->
+<!-- src/app/shared/sidebar/sidebar.component.html -->
 
 <!-- Overlay para cerrar el sidebar en móvil -->
 <div class="sidebar-overlay"
@@ -35,6 +35,14 @@
     </a>
 
     <a class="sidebar__link"
+       routerLink="/inventario"
+       routerLinkActive="sidebar__link--activo"
+       (click)="cerrarAlNavegar()">
+      <span class="material-icons sidebar__link-icono">inventory_2</span>
+      Inventario
+    </a>
+
+    <a class="sidebar__link"
        routerLink="/organizaciones"
        routerLinkActive="sidebar__link--activo"
        (click)="cerrarAlNavegar()">
@@ -49,6 +57,18 @@
       <span class="material-icons sidebar__link-icono">local_shipping</span>
       Distribución
     </a>
+
+    <!-- Solo visible para ADMIN -->
+    <ng-container *ngIf="esAdmin">
+      <p class="sidebar__seccion-titulo" style="margin-top: 16px">Administración</p>
+      <a class="sidebar__link"
+         routerLink="/usuarios"
+         routerLinkActive="sidebar__link--activo"
+         (click)="cerrarAlNavegar()">
+        <span class="material-icons sidebar__link-icono">manage_accounts</span>
+        Usuarios
+      </a>
+    </ng-container>
   </nav>
 
   <!-- Usuario y logout -->
