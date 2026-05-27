@@ -9,11 +9,11 @@ import java.util.List;
 @Repository
 public interface DistribucionRepository extends JpaRepository<Distribucion, Long> {
 
-    List<Distribucion> findByDonacionIdOrderByCreatedAtDesc(Long donacionId);
-
-    List<Distribucion> findByOrganizacionIdOrderByCreatedAtDesc(Long organizacionId);
-
-    List<Distribucion> findAllByOrderByCreatedAtDesc();
+    List<Distribucion> findByDonacionIdOrderByIdAsc(Long donacionId);
+    
+    List<Distribucion> findByOrganizacionIdOrderByIdAsc(Long organizacionId);
+    
+    List<Distribucion> findAllByOrderByIdAsc();
 
     long countByEstado(String estado);
 }

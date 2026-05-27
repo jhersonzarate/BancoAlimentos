@@ -9,9 +9,9 @@ import java.util.List;
 @Repository
 public interface DonacionRepository extends JpaRepository<Donacion, Long> {
 
-    List<Donacion> findByEstadoOrderByCreatedAtDesc(String estado);
-
-    List<Donacion> findAllByOrderByCreatedAtDesc();
+    List<Donacion> findByEstadoOrderByIdAsc(String estado);
+    
+    List<Donacion> findAllByOrderByIdAsc();
 
     long countByEstado(String estado);
 }

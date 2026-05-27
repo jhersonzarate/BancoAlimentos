@@ -1,3 +1,14 @@
+error id: file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/DonacionService.java:com/bancoalimentos/backend/repository/DonacionRepository#findByEstadoOrderByCreatedAtDesc#stream#
+file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/DonacionService.java
+empty definition using pc, found symbol in pc: com/bancoalimentos/backend/repository/DonacionRepository#findByEstadoOrderByCreatedAtDesc#stream#
+semanticdb not found
+empty definition using fallback
+non-local guesses:
+
+offset: 1061
+uri: file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/DonacionService.java
+text:
+```scala
 package com.bancoalimentos.backend.service;
 
 import lombok.RequiredArgsConstructor;
@@ -26,7 +37,7 @@ public class DonacionService {
 
     public List<DonacionDTO.Response> listarPorEstado(String estado) {
         return donacionRepository.findByEstadoOrderByIdAsc(estado)
-                .stream().map(this::toResponse).collect(Collectors.toList());
+                .str@@eam().map(this::toResponse).collect(Collectors.toList());
     }
 
     public DonacionDTO.Response buscarPorId(Long id) {
@@ -99,3 +110,9 @@ public class DonacionService {
                 .build();
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: com/bancoalimentos/backend/repository/DonacionRepository#findByEstadoOrderByCreatedAtDesc#stream#

@@ -13,7 +13,7 @@ import java.util.Optional;
 @Repository
 public interface InventarioRepository extends JpaRepository<Inventario, Long> {
 
-    List<Inventario> findAllByOrderByTipoAlimentoAsc();
+    List<Inventario> findAllByOrderByIdAsc();
 
     Optional<Inventario> findByTipoAlimentoIgnoreCase(String tipoAlimento);
 

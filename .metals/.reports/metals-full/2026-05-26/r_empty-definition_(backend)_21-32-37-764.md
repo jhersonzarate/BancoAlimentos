@@ -1,3 +1,14 @@
+error id: file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/InventarioService.java:com/bancoalimentos/backend/repository/InventarioRepository#findAllByOrderByTipoAlimentoAsc#stream#
+file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/InventarioService.java
+empty definition using pc, found symbol in pc: com/bancoalimentos/backend/repository/InventarioRepository#findAllByOrderByTipoAlimentoAsc#stream#
+semanticdb not found
+empty definition using fallback
+non-local guesses:
+
+offset: 1041
+uri: file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/InventarioService.java
+text:
+```scala
 package com.bancoalimentos.backend.service;
 
 import lombok.RequiredArgsConstructor;
@@ -27,7 +38,7 @@ public class InventarioService {
 
     public List<InventarioDTO.Response> listarTodo() {
         return inventarioRepository.findAllByOrderByIdAsc()
-                .stream()
+                .st@@ream()
                 .map(this::toResponse)
                 .collect(Collectors.toList());
     }
@@ -120,3 +131,9 @@ public class InventarioService {
                 .build();
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: com/bancoalimentos/backend/repository/InventarioRepository#findAllByOrderByTipoAlimentoAsc#stream#

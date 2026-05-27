@@ -25,7 +25,7 @@ public class UsuarioService {
     // ── Listar todos los usuarios ─────────────────────────────────────────
 
     public List<UsuarioDTO.Response> listarTodos() {
-        return usuarioRepository.findAllByOrderByCreatedAtDesc()
+        return usuarioRepository.findAllByOrderByIdAsc()
                 .stream()
                 .map(this::toResponse)
                 .collect(Collectors.toList());

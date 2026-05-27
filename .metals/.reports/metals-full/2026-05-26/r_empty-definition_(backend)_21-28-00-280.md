@@ -1,3 +1,14 @@
+error id: file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/DonacionService.java:com/bancoalimentos/backend/dto/DonacionDTO#Response#ResponseBuilder#unidad().
+file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/DonacionService.java
+empty definition using pc, found symbol in pc: com/bancoalimentos/backend/dto/DonacionDTO#Response#ResponseBuilder#unidad().
+semanticdb not found
+empty definition using fallback
+non-local guesses:
+
+offset: 3892
+uri: file:///C:/Users/Jherson%20Silva/BancoAlimentos/backend/src/main/java/com/bancoalimentos/backend/service/DonacionService.java
+text:
+```scala
 package com.bancoalimentos.backend.service;
 
 import lombok.RequiredArgsConstructor;
@@ -20,12 +31,12 @@ public class DonacionService {
     private final DonacionRepository donacionRepository;
 
     public List<DonacionDTO.Response> listarTodas() {
-        return donacionRepository.findAllByOrderByIdAsc()
+        return donacionRepository.findAllByOrderByCreatedAtDesc()
                 .stream().map(this::toResponse).collect(Collectors.toList());
     }
 
     public List<DonacionDTO.Response> listarPorEstado(String estado) {
-        return donacionRepository.findByEstadoOrderByIdAsc(estado)
+        return donacionRepository.findByEstadoOrderByCreatedAtDesc(estado)
                 .stream().map(this::toResponse).collect(Collectors.toList());
     }
 
@@ -90,7 +101,7 @@ public class DonacionService {
                 .donante(d.getDonante())
                 .tipoAlimento(d.getTipoAlimento())
                 .cantidad(d.getCantidad())
-                .unidad(d.getUnidad())
+                .unid@@ad(d.getUnidad())
                 .fechaDonacion(d.getFechaDonacion())
                 .fechaVencimiento(d.getFechaVencimiento())
                 .estado(d.getEstado())
@@ -99,3 +110,9 @@ public class DonacionService {
                 .build();
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: com/bancoalimentos/backend/dto/DonacionDTO#Response#ResponseBuilder#unidad().

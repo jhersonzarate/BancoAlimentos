@@ -26,7 +26,7 @@ public class DistribucionService {
     private final OrganizacionRepository organizacionRepository;
 
     public List<DistribucionDTO.Response> listarTodas() {
-        return distribucionRepository.findAllByOrderByCreatedAtDesc()
+        return distribucionRepository.findAllByOrderByIdAsc()
                 .stream().map(this::toResponse).collect(Collectors.toList());
     }
 
