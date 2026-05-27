@@ -19,7 +19,11 @@ export class SidebarComponent {
     public sidebarService: SidebarService,
     private authService: AuthService
   ) {}
-
+  
+  get esAdmin(): boolean {
+    return this.authService.usuario()?.rol === 'ADMIN';
+  }
+  
   get usuario(): AuthResponse | null {
     return this.authService.usuario();
   }
