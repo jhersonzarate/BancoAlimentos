@@ -1,12 +1,12 @@
+// lista-organizaciones.component.scss
+@use '../../../../styles/variables' as *;
+
 :host {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-height: 0;
 }
-
-// lista-organizaciones.component.scss
-@use '../../../../styles/variables' as *;
 
 .tipo-badge {
   background: $verde-suave;

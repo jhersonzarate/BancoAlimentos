@@ -1,12 +1,12 @@
+// src/app/pages/usuarios/lista-usuarios/lista-usuarios.component.scss
+@use '../../../../styles/variables' as *;
+
 :host {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-height: 0;
 }
-
-// src/app/pages/usuarios/lista-usuarios/lista-usuarios.component.scss
-@use '../../../../styles/variables' as *;
 
 .acciones {
   display: flex;
